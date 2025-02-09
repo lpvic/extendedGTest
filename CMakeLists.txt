@@ -5,6 +5,9 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_EXTENSIONS OFF)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+set(LOCAL_CPP_LIBS "$ENV{LOCAL_CPP_LIBS}")
+set(LOCAL_CPP_PROJECTS "$ENV{LOCAL_CPP_PROJECTS}")
+
 include_directories(include)
 add_subdirectory(tests)
 
