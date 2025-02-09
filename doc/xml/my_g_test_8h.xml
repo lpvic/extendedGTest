@@ -1,0 +1,206 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="my_g_test_8h" kind="file" language="C++">
+    <compoundname>myGTest.h</compoundname>
+    <includes local="no">sstream</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">iomanip</includes>
+    <includes local="no">string</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>include/myGTest.h</label>
+        <link refid="my_g_test_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>iomanip</label>
+      </node>
+      <node id="3">
+        <label>iostream</label>
+      </node>
+      <node id="2">
+        <label>sstream</label>
+      </node>
+      <node id="5">
+        <label>string</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacecom">com</innernamespace>
+    <sectiondef kind="user-defined">
+      <header>Colors</header>
+      <memberdef kind="define" id="my_g_test_8h_1aeddaedc8dbf1ea567ab5c27a81212320" prot="public" static="no">
+        <name>ANSI_TXT_BLACK</name>
+        <initializer>&quot;\x1B[0;30m&quot;</initializer>
+        <briefdescription>
+<para>Black. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/myGTest.h" line="18" column="13" bodyfile="include/myGTest.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="my_g_test_8h_1a39a6bd12e07c542e69da2eb4df5fc8bb" prot="public" static="no">
+        <name>ANSI_TXT_RED</name>
+        <initializer>&quot;\x1B[0;31m&quot;</initializer>
+        <briefdescription>
+<para>Red. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/myGTest.h" line="24" column="13" bodyfile="include/myGTest.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="my_g_test_8h_1a2d297b306c6d89634750e7713e513b93" prot="public" static="no">
+        <name>ANSI_TXT_GREEN</name>
+        <initializer>&quot;\x1B[0;32m&quot;</initializer>
+        <briefdescription>
+<para>Green. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/myGTest.h" line="30" column="13" bodyfile="include/myGTest.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="my_g_test_8h_1a3a2306647b2a3ebe15cd79e07de456b2" prot="public" static="no">
+        <name>ANSI_TXT_YELLOW</name>
+        <initializer>&quot;\x1B[0;33m&quot;</initializer>
+        <briefdescription>
+<para>Yellow. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/myGTest.h" line="36" column="13" bodyfile="include/myGTest.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="my_g_test_8h_1a03f1a2bf1dbc03536339e9e0bd2d124a" prot="public" static="no">
+        <name>ANSI_TXT_BLUE</name>
+        <initializer>&quot;\x1B[0;34m&quot;</initializer>
+        <briefdescription>
+<para>Blue. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/myGTest.h" line="42" column="13" bodyfile="include/myGTest.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="my_g_test_8h_1a1aa53bd3102df82b848eaab4a7a2fe3f" prot="public" static="no">
+        <name>ANSI_TXT_MAGENTA</name>
+        <initializer>&quot;\x1B[0;35m&quot;</initializer>
+        <briefdescription>
+<para>Magenta. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/myGTest.h" line="48" column="13" bodyfile="include/myGTest.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="my_g_test_8h_1a4acc8d4683929e74dadc8581fed65631" prot="public" static="no">
+        <name>ANSI_TXT_CYAN</name>
+        <initializer>&quot;\x1B[0;36m&quot;</initializer>
+        <briefdescription>
+<para>Cyan. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/myGTest.h" line="54" column="13" bodyfile="include/myGTest.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="my_g_test_8h_1a078d1d7333255ca32c9a2353751ac679" prot="public" static="no">
+        <name>ANSI_TXT_WHITE</name>
+        <initializer>&quot;\x1B[0;37m&quot;</initializer>
+        <briefdescription>
+<para>White. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/myGTest.h" line="60" column="13" bodyfile="include/myGTest.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="my_g_test_8h_1a73a90ff7ba49f75ad9a3924bfdedcd58" prot="public" static="no">
+        <name>ANSI_TXT_DEFAULT</name>
+        <initializer>&quot;\x1B[0;0m&quot;</initializer>
+        <briefdescription>
+<para>Default. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/myGTest.h" line="66" column="13" bodyfile="include/myGTest.h" bodystart="66" bodyend="-1"/>
+        <referencedby refid="namespacecom_1af42e1ef780d4684ae28e069200c07238">com::gtest_line</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="my_g_test_8h_1a168f8cb76eae6af29165b778a326d90e" prot="public" static="no">
+        <name>GTEST_BOX</name>
+        <param><defname>box_content</defname></param>
+        <initializer>&quot;[ &quot; &lt;&lt; std::setw(8) &lt;&lt; std::string(box_content).substr(0,8) &lt;&lt; &quot; ]&quot;</initializer>
+        <briefdescription>
+<para>Macro to define the box format to match gtest output. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/myGTest.h" line="75" column="13" bodyfile="include/myGTest.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iomanip&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="namespacecom" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacecom" kindref="compound">com</ref><sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>ANSI<sp/>Codes<sp/>-&gt;<sp/>https://gist.github.com/fnky/458719343aabd01cfb17a3a4f7296797</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="my_g_test_8h_1aeddaedc8dbf1ea567ab5c27a81212320" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>ANSI_TXT_BLACK<sp/>&quot;\x1B[0;30m&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="my_g_test_8h_1a39a6bd12e07c542e69da2eb4df5fc8bb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>ANSI_TXT_RED<sp/>&quot;\x1B[0;31m&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="my_g_test_8h_1a2d297b306c6d89634750e7713e513b93" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>ANSI_TXT_GREEN<sp/>&quot;\x1B[0;32m&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="my_g_test_8h_1a3a2306647b2a3ebe15cd79e07de456b2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>ANSI_TXT_YELLOW<sp/>&quot;\x1B[0;33m&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="my_g_test_8h_1a03f1a2bf1dbc03536339e9e0bd2d124a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>ANSI_TXT_BLUE<sp/>&quot;\x1B[0;34m&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="my_g_test_8h_1a1aa53bd3102df82b848eaab4a7a2fe3f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>ANSI_TXT_MAGENTA<sp/>&quot;\x1B[0;35m&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="my_g_test_8h_1a4acc8d4683929e74dadc8581fed65631" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>ANSI_TXT_CYAN<sp/>&quot;\x1B[0;36m&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="my_g_test_8h_1a078d1d7333255ca32c9a2353751ac679" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>ANSI_TXT_WHITE<sp/>&quot;\x1B[0;37m&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="my_g_test_8h_1a73a90ff7ba49f75ad9a3924bfdedcd58" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>ANSI_TXT_DEFAULT<sp/>&quot;\x1B[0;0m&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="my_g_test_8h_1a168f8cb76eae6af29165b778a326d90e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>GTEST_BOX(box_content)<sp/>&quot;[<sp/>&quot;<sp/>&lt;&lt;<sp/>std::setw(8)<sp/>&lt;&lt;<sp/>std::string(box_content).substr(0,8)<sp/>&lt;&lt;<sp/>&quot;<sp/>]&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="namespacecom_1af42e1ef780d4684ae28e069200c07238" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="namespacecom_1af42e1ef780d4684ae28e069200c07238" kindref="member">gtest_line</ref>(std::string<sp/>box_content,<sp/>std::string<sp/>message,<sp/>std::string<sp/>color<sp/>=<sp/><ref refid="my_g_test_8h_1a73a90ff7ba49f75ad9a3924bfdedcd58" kindref="member">ANSI_TXT_DEFAULT</ref>);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="include/myGTest.h"/>
+  </compounddef>
+</doxygen>
