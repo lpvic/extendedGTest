@@ -18,6 +18,12 @@ set(THIS_PROJECT "${LOCAL_CPP_PROJECTS}/myGTest")
 include_directories(include)
 add_subdirectory(tests)
 
+set(GTEST_INCLUDE_DIR "${LOCAL_CPP_LIBS}/extLibs/gtest/googletest/include")
+set(GTEST_LIBRARY "${LOCAL_CPP_LIBS}/extLibs/gtest/build/lib/libgtest.a")
+set(GTEST_MAIN_LIBRARY "${LOCAL_CPP_LIBS}/extLibs/gtest/build/lib/libgtest_main.a")
+include_directories(${GTEST_INCLUDE_DIR})
+find_package(GTest REQUIRED)
+
 add_library(myGTest STATIC ./src/myGTest.cpp)
 set_target_properties(myGTest PROPERTIES 
     ARCHIVE_OUTPUT_DIRECTORY_DEBUG "${CMAKE_BINARY_DIR}/output/lib/debug"
@@ -27,6 +33,7 @@ set_target_properties(myGTest PROPERTIES
     LIBRARY_OUTPUT_DIRECTORY_RELEASE "${CMAKE_BINARY_DIR}/output/lib/release"
     RUNTIME_OUTPUT_DIRECTORY_RELEASE "${CMAKE_BINARY_DIR}/output/bin/release"
 )
+target_link_libraries(myGTest GTest::gtest_main GTest::gtest)
 
 if (CMAKE_BUILD_TYPE STREQUAL "Release")
     add_custom_command(TARGET myGTest POST_BUILD COMMAND ${CMAKE_COMMAND} -E copy_directory  ${THIS_PROJECT}/include/ ${LOCAL_CPP_LIBS}/myLibs/${CMAKE_PROJECT_NAME}/include/)

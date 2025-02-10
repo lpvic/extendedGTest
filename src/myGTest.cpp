@@ -1,9 +1,11 @@
 #include "myGTest.h"
 
-namespace com {
-    std::string gtest_line(std::string box_content, std::string message, std::string color){
+namespace myGTest {
+    std::string gtest_line(std::string box_content, std::string message, std::string color, align_type align){
         std::stringstream os;
-        os  << ANSI_TXT_GREEN << GTEST_BOX(box_content) << color << " " << message << ANSI_TXT_DEFAULT;
+
+        os  << COLORS.GREEN << "[ " << (align ? std::right : std::left) << std::setw(8) << box_content.substr(0,8) << " ]";
+        os << color << " " << message << COLORS.DEFAULT << std::endl;
         return os.str();
     }
 }
