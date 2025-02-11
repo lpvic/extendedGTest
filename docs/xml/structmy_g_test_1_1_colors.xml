@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structmy_g_test_1_1_colors" kind="struct" language="C++" prot="public">
+    <compoundname>myGTest::Colors</compoundname>
+    <includes refid="my_g_test_8h" local="no">myGTest.h</includes>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structmy_g_test_1_1_colors_1a733911b7b4b5c087998b2df31313e875" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>std::string</type>
+        <definition>std::string myGTest::Colors::DEFAULT</definition>
+        <argsstring></argsstring>
+        <name>DEFAULT</name>
+        <qualifiedname>myGTest::Colors::DEFAULT</qualifiedname>
+        <initializer>= &quot;\x1B[0;0m&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/myGTest.h" line="11" column="38" bodyfile="include/myGTest.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmy_g_test_1_1_colors_1af6602e01f0a42c01560e0fc77b91b939" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>std::string</type>
+        <definition>std::string myGTest::Colors::BLACK</definition>
+        <argsstring></argsstring>
+        <name>BLACK</name>
+        <qualifiedname>myGTest::Colors::BLACK</qualifiedname>
+        <initializer>= &quot;\x1B[0;30m&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/myGTest.h" line="12" column="38" bodyfile="include/myGTest.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmy_g_test_1_1_colors_1ada7aec3f7177ecf31f3ebfbe3b1a60c8" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>std::string</type>
+        <definition>std::string myGTest::Colors::RED</definition>
+        <argsstring></argsstring>
+        <name>RED</name>
+        <qualifiedname>myGTest::Colors::RED</qualifiedname>
+        <initializer>= &quot;\x1B[0;31m&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/myGTest.h" line="13" column="38" bodyfile="include/myGTest.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmy_g_test_1_1_colors_1a3c96aefc84c80c9abcc5972f5cc2f946" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>std::string</type>
+        <definition>std::string myGTest::Colors::GREEN</definition>
+        <argsstring></argsstring>
+        <name>GREEN</name>
+        <qualifiedname>myGTest::Colors::GREEN</qualifiedname>
+        <initializer>= &quot;\x1B[0;32m&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/myGTest.h" line="14" column="38" bodyfile="include/myGTest.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmy_g_test_1_1_colors_1a7a5cddca06cc86c8247a565fbe8b17e8" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>std::string</type>
+        <definition>std::string myGTest::Colors::YELLOW</definition>
+        <argsstring></argsstring>
+        <name>YELLOW</name>
+        <qualifiedname>myGTest::Colors::YELLOW</qualifiedname>
+        <initializer>= &quot;\x1B[0;33m&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/myGTest.h" line="15" column="38" bodyfile="include/myGTest.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmy_g_test_1_1_colors_1ad49e4db6df5e42955dbdb23f1bb72921" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>std::string</type>
+        <definition>std::string myGTest::Colors::BLUE</definition>
+        <argsstring></argsstring>
+        <name>BLUE</name>
+        <qualifiedname>myGTest::Colors::BLUE</qualifiedname>
+        <initializer>= &quot;\x1B[0;34m&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/myGTest.h" line="16" column="38" bodyfile="include/myGTest.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmy_g_test_1_1_colors_1a278dbfc7b510cfc835cb34cec2b4fe99" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>std::string</type>
+        <definition>std::string myGTest::Colors::MAGENTA</definition>
+        <argsstring></argsstring>
+        <name>MAGENTA</name>
+        <qualifiedname>myGTest::Colors::MAGENTA</qualifiedname>
+        <initializer>= &quot;\x1B[0;35m&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/myGTest.h" line="17" column="38" bodyfile="include/myGTest.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmy_g_test_1_1_colors_1a72ec306bdb131f0c630efd1e65f348f0" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>std::string</type>
+        <definition>std::string myGTest::Colors::CYAN</definition>
+        <argsstring></argsstring>
+        <name>CYAN</name>
+        <qualifiedname>myGTest::Colors::CYAN</qualifiedname>
+        <initializer>= &quot;\x1B[0;36m&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/myGTest.h" line="18" column="38" bodyfile="include/myGTest.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmy_g_test_1_1_colors_1adcf7d127e4558d85f577a7e55d219f6f" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>std::string</type>
+        <definition>std::string myGTest::Colors::WHITE</definition>
+        <argsstring></argsstring>
+        <name>WHITE</name>
+        <qualifiedname>myGTest::Colors::WHITE</qualifiedname>
+        <initializer>= &quot;\x1B[0;37m&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/myGTest.h" line="19" column="38" bodyfile="include/myGTest.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/myGTest.h" line="10" column="5" bodyfile="include/myGTest.h" bodystart="10" bodyend="20"/>
+    <listofallmembers>
+      <member refid="structmy_g_test_1_1_colors_1af6602e01f0a42c01560e0fc77b91b939" prot="public" virt="non-virtual"><scope>myGTest::Colors</scope><name>BLACK</name></member>
+      <member refid="structmy_g_test_1_1_colors_1ad49e4db6df5e42955dbdb23f1bb72921" prot="public" virt="non-virtual"><scope>myGTest::Colors</scope><name>BLUE</name></member>
+      <member refid="structmy_g_test_1_1_colors_1a72ec306bdb131f0c630efd1e65f348f0" prot="public" virt="non-virtual"><scope>myGTest::Colors</scope><name>CYAN</name></member>
+      <member refid="structmy_g_test_1_1_colors_1a733911b7b4b5c087998b2df31313e875" prot="public" virt="non-virtual"><scope>myGTest::Colors</scope><name>DEFAULT</name></member>
+      <member refid="structmy_g_test_1_1_colors_1a3c96aefc84c80c9abcc5972f5cc2f946" prot="public" virt="non-virtual"><scope>myGTest::Colors</scope><name>GREEN</name></member>
+      <member refid="structmy_g_test_1_1_colors_1a278dbfc7b510cfc835cb34cec2b4fe99" prot="public" virt="non-virtual"><scope>myGTest::Colors</scope><name>MAGENTA</name></member>
+      <member refid="structmy_g_test_1_1_colors_1ada7aec3f7177ecf31f3ebfbe3b1a60c8" prot="public" virt="non-virtual"><scope>myGTest::Colors</scope><name>RED</name></member>
+      <member refid="structmy_g_test_1_1_colors_1adcf7d127e4558d85f577a7e55d219f6f" prot="public" virt="non-virtual"><scope>myGTest::Colors</scope><name>WHITE</name></member>
+      <member refid="structmy_g_test_1_1_colors_1a7a5cddca06cc86c8247a565fbe8b17e8" prot="public" virt="non-virtual"><scope>myGTest::Colors</scope><name>YELLOW</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
