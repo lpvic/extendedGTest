@@ -5,7 +5,7 @@
 #include <iomanip>
 #include <string>
 
-namespace myGTest {
+namespace modGTest {
     // ANSI Codes -> https://gist.github.com/fnky/458719343aabd01cfb17a3a4f7296797
     const struct Colors {
         constexpr static std::string DEFAULT = "\x1B[0;0m";

@@ -1,6 +1,6 @@
-#include "myGTest.h"
+#include "modGTest.h"
 
-namespace myGTest {
+namespace modGTest {
     std::string gtest_line(std::string box_content, std::string message, std::string color, align_type align){
         std::stringstream os;
 
