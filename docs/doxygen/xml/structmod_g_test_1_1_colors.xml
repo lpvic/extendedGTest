@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structmod_g_test_1_1_colors" kind="struct" language="C++" prot="public">
+    <compoundname>modGTest::Colors</compoundname>
+    <includes refid="mod_g_test_8h" local="no">modGTest.h</includes>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structmod_g_test_1_1_colors_1ad6624e5c3a5831dccce4ce57e3c51358" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>std::string</type>
+        <definition>std::string modGTest::Colors::DEFAULT</definition>
+        <argsstring></argsstring>
+        <name>DEFAULT</name>
+        <qualifiedname>modGTest::Colors::DEFAULT</qualifiedname>
+        <initializer>= &quot;\x1B[0;0m&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/modGTest.h" line="11" column="38" bodyfile="include/modGTest.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmod_g_test_1_1_colors_1a5680028fd8b8cc23c4bd31d4fce90cdd" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>std::string</type>
+        <definition>std::string modGTest::Colors::BLACK</definition>
+        <argsstring></argsstring>
+        <name>BLACK</name>
+        <qualifiedname>modGTest::Colors::BLACK</qualifiedname>
+        <initializer>= &quot;\x1B[0;30m&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/modGTest.h" line="12" column="38" bodyfile="include/modGTest.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmod_g_test_1_1_colors_1a19ba9ad319f0148f521fc81ce4a732b4" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>std::string</type>
+        <definition>std::string modGTest::Colors::RED</definition>
+        <argsstring></argsstring>
+        <name>RED</name>
+        <qualifiedname>modGTest::Colors::RED</qualifiedname>
+        <initializer>= &quot;\x1B[0;31m&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/modGTest.h" line="13" column="38" bodyfile="include/modGTest.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmod_g_test_1_1_colors_1ac5ee4cc06701e4f739e44ffd35690a3d" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>std::string</type>
+        <definition>std::string modGTest::Colors::GREEN</definition>
+        <argsstring></argsstring>
+        <name>GREEN</name>
+        <qualifiedname>modGTest::Colors::GREEN</qualifiedname>
+        <initializer>= &quot;\x1B[0;32m&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/modGTest.h" line="14" column="38" bodyfile="include/modGTest.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmod_g_test_1_1_colors_1a23d938f521db91249821f67ff08ffdfb" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>std::string</type>
+        <definition>std::string modGTest::Colors::YELLOW</definition>
+        <argsstring></argsstring>
+        <name>YELLOW</name>
+        <qualifiedname>modGTest::Colors::YELLOW</qualifiedname>
+        <initializer>= &quot;\x1B[0;33m&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/modGTest.h" line="15" column="38" bodyfile="include/modGTest.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmod_g_test_1_1_colors_1a55303e65dd093513603ffee609c646c2" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>std::string</type>
+        <definition>std::string modGTest::Colors::BLUE</definition>
+        <argsstring></argsstring>
+        <name>BLUE</name>
+        <qualifiedname>modGTest::Colors::BLUE</qualifiedname>
+        <initializer>= &quot;\x1B[0;34m&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/modGTest.h" line="16" column="38" bodyfile="include/modGTest.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmod_g_test_1_1_colors_1a8585ed40343504931d9d5861c3fb7637" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>std::string</type>
+        <definition>std::string modGTest::Colors::MAGENTA</definition>
+        <argsstring></argsstring>
+        <name>MAGENTA</name>
+        <qualifiedname>modGTest::Colors::MAGENTA</qualifiedname>
+        <initializer>= &quot;\x1B[0;35m&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/modGTest.h" line="17" column="38" bodyfile="include/modGTest.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmod_g_test_1_1_colors_1aaa18037e87ea9ad8f0f8fa48792013b7" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>std::string</type>
+        <definition>std::string modGTest::Colors::CYAN</definition>
+        <argsstring></argsstring>
+        <name>CYAN</name>
+        <qualifiedname>modGTest::Colors::CYAN</qualifiedname>
+        <initializer>= &quot;\x1B[0;36m&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/modGTest.h" line="18" column="38" bodyfile="include/modGTest.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmod_g_test_1_1_colors_1ac40d103e205cfb291fd8e68672c67465" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>std::string</type>
+        <definition>std::string modGTest::Colors::WHITE</definition>
+        <argsstring></argsstring>
+        <name>WHITE</name>
+        <qualifiedname>modGTest::Colors::WHITE</qualifiedname>
+        <initializer>= &quot;\x1B[0;37m&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/modGTest.h" line="19" column="38" bodyfile="include/modGTest.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/modGTest.h" line="10" column="5" bodyfile="include/modGTest.h" bodystart="10" bodyend="20"/>
+    <listofallmembers>
+      <member refid="structmod_g_test_1_1_colors_1a5680028fd8b8cc23c4bd31d4fce90cdd" prot="public" virt="non-virtual"><scope>modGTest::Colors</scope><name>BLACK</name></member>
+      <member refid="structmod_g_test_1_1_colors_1a55303e65dd093513603ffee609c646c2" prot="public" virt="non-virtual"><scope>modGTest::Colors</scope><name>BLUE</name></member>
+      <member refid="structmod_g_test_1_1_colors_1aaa18037e87ea9ad8f0f8fa48792013b7" prot="public" virt="non-virtual"><scope>modGTest::Colors</scope><name>CYAN</name></member>
+      <member refid="structmod_g_test_1_1_colors_1ad6624e5c3a5831dccce4ce57e3c51358" prot="public" virt="non-virtual"><scope>modGTest::Colors</scope><name>DEFAULT</name></member>
+      <member refid="structmod_g_test_1_1_colors_1ac5ee4cc06701e4f739e44ffd35690a3d" prot="public" virt="non-virtual"><scope>modGTest::Colors</scope><name>GREEN</name></member>
+      <member refid="structmod_g_test_1_1_colors_1a8585ed40343504931d9d5861c3fb7637" prot="public" virt="non-virtual"><scope>modGTest::Colors</scope><name>MAGENTA</name></member>
+      <member refid="structmod_g_test_1_1_colors_1a19ba9ad319f0148f521fc81ce4a732b4" prot="public" virt="non-virtual"><scope>modGTest::Colors</scope><name>RED</name></member>
+      <member refid="structmod_g_test_1_1_colors_1ac40d103e205cfb291fd8e68672c67465" prot="public" virt="non-virtual"><scope>modGTest::Colors</scope><name>WHITE</name></member>
+      <member refid="structmod_g_test_1_1_colors_1a23d938f521db91249821f67ff08ffdfb" prot="public" virt="non-virtual"><scope>modGTest::Colors</scope><name>YELLOW</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

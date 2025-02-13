@@ -273,5 +273,5 @@ namespace modGTest {
             std::cerr << gtest_line(box_text, message, color, align);
         }
         EXPECT_NO_THROW(test, expectation);
-    }    
-}
+    }
+}    
