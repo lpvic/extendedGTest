@@ -1,5 +1,5 @@
-add_library(${CMAKE_PROJECT_NAME} STATIC modGTest.cpp) 
-target_include_directories(${CMAKE_PROJECT_NAME} PUBLIC "${THIS_PROJECT}/include")
+add_library(${CMAKE_PROJECT_NAME} STATIC extendedGTest.cpp) 
+target_include_directories(${CMAKE_PROJECT_NAME} PUBLIC "${THIS_PROJECT}/extendedGTest")
 set_target_properties(${CMAKE_PROJECT_NAME} PROPERTIES 
     ARCHIVE_OUTPUT_DIRECTORY_DEBUG "${CMAKE_BINARY_DIR}/output/lib/debug"
     LIBRARY_OUTPUT_DIRECTORY_DEBUG "${CMAKE_BINARY_DIR}/output/lib/debug"
