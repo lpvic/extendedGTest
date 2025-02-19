@@ -8,6 +8,10 @@ set_target_properties(${CMAKE_PROJECT_NAME} PROPERTIES
     LIBRARY_OUTPUT_DIRECTORY_RELEASE "${CMAKE_BINARY_DIR}/output/lib/release"
     RUNTIME_OUTPUT_DIRECTORY_RELEASE "${CMAKE_BINARY_DIR}/output/bin/release"
 )
+
+# Import gtest library
+include("${LOCAL_CMAKE_MODULES}/gtest.cmake")
+
 target_link_libraries(${CMAKE_PROJECT_NAME} gtest_main)
 
 if (CMAKE_BUILD_TYPE STREQUAL "Release")

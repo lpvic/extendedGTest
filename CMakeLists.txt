@@ -18,9 +18,6 @@ set(THIS_PROJECT "${LOCAL_CPP_PROJECTS}/${CMAKE_PROJECT_NAME}")
 # Include external libraries
 include_directories("${LOCAL_CPP_INCLUDES}")
 
-# Import gtest library
-include("${LOCAL_CMAKE_MODULES}/gtest.cmake")
-
 # Add the cmake folder so the FindSphinx module is found
 set(CMAKE_MODULE_PATH ${LOCAL_CMAKE_MODULES} ${CMAKE_MODULE_PATH})
 
