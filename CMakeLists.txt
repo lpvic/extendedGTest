@@ -1,6 +1,6 @@
 # CMake initialization
 cmake_minimum_required(VERSION 3.10.0)
-project(modGTest VERSION 0.0.3 LANGUAGES C CXX)
+project(extendedGTest VERSION 0.0.3 LANGUAGES C CXX)
 
 # Set languaje requirements
 set(CMAKE_CXX_STANDARD 20)
@@ -22,6 +22,6 @@ include_directories("${LOCAL_CPP_INCLUDES}")
 set(CMAKE_MODULE_PATH ${LOCAL_CMAKE_MODULES} ${CMAKE_MODULE_PATH})
 
 # Add project folders 
-add_subdirectory(src)
+add_subdirectory(extendedGTest)
 add_subdirectory(tests)
 add_subdirectory(docs)
