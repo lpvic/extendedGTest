@@ -15,10 +15,13 @@ set(LOCAL_PROGRAMMING_ROOT "$ENV{LOCAL_PROGRAMMING_ROOT}")
 set(LOCAL_CPP_PROJECTS "${LOCAL_PROGRAMMING_ROOT}/Projects/VSCode/C++")
 set(LOCAL_CMAKE_MODULES "${LOCAL_PROGRAMMING_ROOT}/Resources/cmake")
 set(THIS_PROJECT "${LOCAL_CPP_PROJECTS}/${CMAKE_PROJECT_NAME}")
+message(STATUS "LOCAL_CPP_PROJECTS=${LOCAL_CPP_PROJECTS}")
+message(STATUS "LOCAL_CMAKE_MODULES=${LOCAL_CMAKE_MODULES}")
+message(STATUS "THIS_PROJECT=${THIS_PROJECT}")
 
 # Include external libraries
 include_directories("${LOCAL_CPP_INCLUDES}")
-include_directories("${LOCAL_CPP_PROJECTS}/${CMAKE_PROJECT_NAME}/extendedGTest")
+include_directories("${THIS_PROJECT}/extendedGTest")
 
 # Add the cmake folder so the FindSphinx module is found
 set(CMAKE_MODULE_PATH ${LOCAL_CMAKE_MODULES} ${CMAKE_MODULE_PATH})
@@ -27,3 +30,5 @@ set(CMAKE_MODULE_PATH ${LOCAL_CMAKE_MODULES} ${CMAKE_MODULE_PATH})
 add_subdirectory(extendedGTest)
 add_subdirectory(tests)
 add_subdirectory(docs)
+
+

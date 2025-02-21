@@ -12,14 +12,50 @@ namespace extGTest {
      * 
      */
     const struct Colors {
+        /**
+         * @brief ANSI color code for default.
+         * 
+         */
         constexpr static std::string DEFAULT = "\x1B[0;0m";
+        /**
+         * @brief ANSI color code for black.
+         * 
+         */
         constexpr static std::string BLACK = "\x1B[0;30m";
+        /**
+         * @brief ANSI color code for red.
+         * 
+         */
         constexpr static std::string RED = "\x1B[0;31m";
+        /**
+         * @brief ANSI color code for green.
+         * 
+         */
         constexpr static std::string GREEN = "\x1B[0;32m";
+        /**
+         * @brief ANSI color code for yellow.
+         * 
+         */
         constexpr static std::string YELLOW = "\x1B[0;33m";
+        /**
+         * @brief ANSI color code for blue.
+         * 
+         */
         constexpr static std::string BLUE = "\x1B[0;34m";
+        /**
+         * @brief ANSI color code for magenta.
+         * 
+         */
         constexpr static std::string MAGENTA = "\x1B[0;35m";
+        /**
+         * @brief ANSI color code for cyan.
+         * 
+         */
         constexpr static std::string CYAN = "\x1B[0;36m";
+        /**
+         * @brief ANSI color code for white.
+         * 
+         */
         constexpr static std::string WHITE = "\x1B[0;37m";
     } COLORS;
 

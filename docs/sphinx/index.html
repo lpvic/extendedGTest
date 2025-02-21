@@ -1,0 +1,970 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>extendedGTest Documentation &mdash; extendedGTest  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="#" class="icon icon-home">
+            extendedGTest
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">extendedGTest Documentation</a><ul>
+<li><a class="reference internal" href="#_CPPv48extGTest"><code class="docutils literal notranslate"><span class="pre">extGTest</span></code></a><ul>
+<li><a class="reference internal" href="#_CPPv4N8extGTest10align_typeE"><code class="docutils literal notranslate"><span class="pre">extGTest::align_type</span></code></a><ul>
+<li><a class="reference internal" href="#_CPPv4N8extGTest10align_type4LEFTE"><code class="docutils literal notranslate"><span class="pre">extGTest::align_type::LEFT</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N8extGTest10align_type5RIGHTE"><code class="docutils literal notranslate"><span class="pre">extGTest::align_type::RIGHT</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#_CPPv4N8extGTest10gtest_lineENSt6stringENSt6stringENSt6stringE10align_type"><code class="docutils literal notranslate"><span class="pre">extGTest::gtest_line()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N8extGTest13myASSERT_THATEDaDaNSt6stringENSt6stringENSt6stringE10align_type"><code class="docutils literal notranslate"><span class="pre">extGTest::myASSERT_THAT()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N8extGTest13myASSERT_TRUEEDaDaNSt6stringENSt6stringENSt6stringE10align_type"><code class="docutils literal notranslate"><span class="pre">extGTest::myASSERT_TRUE()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N8extGTest14myASSERT_FALSEEDaDaNSt6stringENSt6stringENSt6stringE10align_type"><code class="docutils literal notranslate"><span class="pre">extGTest::myASSERT_FALSE()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N8extGTest11myASSERT_EQEDaDaNSt6stringENSt6stringENSt6stringE10align_type"><code class="docutils literal notranslate"><span class="pre">extGTest::myASSERT_EQ()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N8extGTest11myASSERT_NEEDaDaNSt6stringENSt6stringENSt6stringE10align_type"><code class="docutils literal notranslate"><span class="pre">extGTest::myASSERT_NE()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N8extGTest11myASSERT_LTEDaDaNSt6stringENSt6stringENSt6stringE10align_type"><code class="docutils literal notranslate"><span class="pre">extGTest::myASSERT_LT()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N8extGTest11myASSERT_GTEDaDaNSt6stringENSt6stringENSt6stringE10align_type"><code class="docutils literal notranslate"><span class="pre">extGTest::myASSERT_GT()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N8extGTest11myASSERT_LEEDaDaNSt6stringENSt6stringENSt6stringE10align_type"><code class="docutils literal notranslate"><span class="pre">extGTest::myASSERT_LE()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N8extGTest11myASSERT_GEEDaDaNSt6stringENSt6stringENSt6stringE10align_type"><code class="docutils literal notranslate"><span class="pre">extGTest::myASSERT_GE()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N8extGTest14myASSERT_STREQEDaDaNSt6stringENSt6stringENSt6stringE10align_type"><code class="docutils literal notranslate"><span class="pre">extGTest::myASSERT_STREQ()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N8extGTest14myASSERT_STRNEEDaDaNSt6stringENSt6stringENSt6stringE10align_type"><code class="docutils literal notranslate"><span class="pre">extGTest::myASSERT_STRNE()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N8extGTest18myASSERT_STRCASEEQEDaDaNSt6stringENSt6stringENSt6stringE10align_type"><code class="docutils literal notranslate"><span class="pre">extGTest::myASSERT_STRCASEEQ()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N8extGTest18myASSERT_STRCASENEEDaDaNSt6stringENSt6stringENSt6stringE10align_type"><code class="docutils literal notranslate"><span class="pre">extGTest::myASSERT_STRCASENE()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N8extGTest17myASSERT_FLOAT_EQEDaDaNSt6stringENSt6stringENSt6stringE10align_type"><code class="docutils literal notranslate"><span class="pre">extGTest::myASSERT_FLOAT_EQ()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N8extGTest18myASSERT_DOUBLE_EQEDaDaNSt6stringENSt6stringENSt6stringE10align_type"><code class="docutils literal notranslate"><span class="pre">extGTest::myASSERT_DOUBLE_EQ()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N8extGTest13myASSERT_NEAREDaDaNSt6stringENSt6stringENSt6stringE10align_type"><code class="docutils literal notranslate"><span class="pre">extGTest::myASSERT_NEAR()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N8extGTest14myASSERT_THROWEDaDaNSt6stringENSt6stringENSt6stringE10align_type"><code class="docutils literal notranslate"><span class="pre">extGTest::myASSERT_THROW()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N8extGTest18myASSERT_ANY_THROWEDaDaNSt6stringENSt6stringENSt6stringE10align_type"><code class="docutils literal notranslate"><span class="pre">extGTest::myASSERT_ANY_THROW()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N8extGTest17myASSERT_NO_THROWEDaDaNSt6stringENSt6stringENSt6stringE10align_type"><code class="docutils literal notranslate"><span class="pre">extGTest::myASSERT_NO_THROW()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N8extGTest13myEXPECT_THATEDaDaNSt6stringENSt6stringENSt6stringE10align_type"><code class="docutils literal notranslate"><span class="pre">extGTest::myEXPECT_THAT()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N8extGTest13myEXPECT_TRUEEDaDaNSt6stringENSt6stringENSt6stringE10align_type"><code class="docutils literal notranslate"><span class="pre">extGTest::myEXPECT_TRUE()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N8extGTest14myEXPECT_FALSEEDaDaNSt6stringENSt6stringENSt6stringE10align_type"><code class="docutils literal notranslate"><span class="pre">extGTest::myEXPECT_FALSE()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N8extGTest11myEXPECT_EQEDaDaNSt6stringENSt6stringENSt6stringE10align_type"><code class="docutils literal notranslate"><span class="pre">extGTest::myEXPECT_EQ()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N8extGTest11myEXPECT_NEEDaDaNSt6stringENSt6stringENSt6stringE10align_type"><code class="docutils literal notranslate"><span class="pre">extGTest::myEXPECT_NE()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N8extGTest11myEXPECT_LTEDaDaNSt6stringENSt6stringENSt6stringE10align_type"><code class="docutils literal notranslate"><span class="pre">extGTest::myEXPECT_LT()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N8extGTest11myEXPECT_GTEDaDaNSt6stringENSt6stringENSt6stringE10align_type"><code class="docutils literal notranslate"><span class="pre">extGTest::myEXPECT_GT()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N8extGTest11myEXPECT_LEEDaDaNSt6stringENSt6stringENSt6stringE10align_type"><code class="docutils literal notranslate"><span class="pre">extGTest::myEXPECT_LE()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N8extGTest11myEXPECT_GEEDaDaNSt6stringENSt6stringENSt6stringE10align_type"><code class="docutils literal notranslate"><span class="pre">extGTest::myEXPECT_GE()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N8extGTest14myEXPECT_STREQEDaDaNSt6stringENSt6stringENSt6stringE10align_type"><code class="docutils literal notranslate"><span class="pre">extGTest::myEXPECT_STREQ()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N8extGTest14myEXPECT_STRNEEDaDaNSt6stringENSt6stringENSt6stringE10align_type"><code class="docutils literal notranslate"><span class="pre">extGTest::myEXPECT_STRNE()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N8extGTest18myEXPECT_STRCASEEQEDaDaNSt6stringENSt6stringENSt6stringE10align_type"><code class="docutils literal notranslate"><span class="pre">extGTest::myEXPECT_STRCASEEQ()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N8extGTest18myEXPECT_STRCASENEEDaDaNSt6stringENSt6stringENSt6stringE10align_type"><code class="docutils literal notranslate"><span class="pre">extGTest::myEXPECT_STRCASENE()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N8extGTest17myEXPECT_FLOAT_EQEDaDaNSt6stringENSt6stringENSt6stringE10align_type"><code class="docutils literal notranslate"><span class="pre">extGTest::myEXPECT_FLOAT_EQ()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N8extGTest18myEXPECT_DOUBLE_EQEDaDaNSt6stringENSt6stringENSt6stringE10align_type"><code class="docutils literal notranslate"><span class="pre">extGTest::myEXPECT_DOUBLE_EQ()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N8extGTest13myEXPECT_NEAREDaDaNSt6stringENSt6stringENSt6stringE10align_type"><code class="docutils literal notranslate"><span class="pre">extGTest::myEXPECT_NEAR()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N8extGTest14myEXPECT_THROWEDaDaNSt6stringENSt6stringENSt6stringE10align_type"><code class="docutils literal notranslate"><span class="pre">extGTest::myEXPECT_THROW()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N8extGTest18myEXPECT_ANY_THROWEDaDaNSt6stringENSt6stringENSt6stringE10align_type"><code class="docutils literal notranslate"><span class="pre">extGTest::myEXPECT_ANY_THROW()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N8extGTest17myEXPECT_NO_THROWEDaDaNSt6stringENSt6stringENSt6stringE10align_type"><code class="docutils literal notranslate"><span class="pre">extGTest::myEXPECT_NO_THROW()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N8extGTest6COLORSE"><code class="docutils literal notranslate"><span class="pre">extGTest::COLORS</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N8extGTest6ColorsE"><code class="docutils literal notranslate"><span class="pre">extGTest::Colors</span></code></a><ul>
+<li><a class="reference internal" href="#_CPPv4N8extGTest6Colors7DEFAULTE"><code class="docutils literal notranslate"><span class="pre">extGTest::Colors::DEFAULT</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N8extGTest6Colors5BLACKE"><code class="docutils literal notranslate"><span class="pre">extGTest::Colors::BLACK</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N8extGTest6Colors3REDE"><code class="docutils literal notranslate"><span class="pre">extGTest::Colors::RED</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N8extGTest6Colors5GREENE"><code class="docutils literal notranslate"><span class="pre">extGTest::Colors::GREEN</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N8extGTest6Colors6YELLOWE"><code class="docutils literal notranslate"><span class="pre">extGTest::Colors::YELLOW</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N8extGTest6Colors4BLUEE"><code class="docutils literal notranslate"><span class="pre">extGTest::Colors::BLUE</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N8extGTest6Colors7MAGENTAE"><code class="docutils literal notranslate"><span class="pre">extGTest::Colors::MAGENTA</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N8extGTest6Colors4CYANE"><code class="docutils literal notranslate"><span class="pre">extGTest::Colors::CYAN</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N8extGTest6Colors5WHITEE"><code class="docutils literal notranslate"><span class="pre">extGTest::Colors::WHITE</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">extendedGTest</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="#" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">extendedGTest Documentation</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="extendedgtest-documentation">
+<h1>extendedGTest Documentation<a class="headerlink" href="#extendedgtest-documentation" title="Link to this heading"></a></h1>
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv48extGTest">
+<span id="_CPPv38extGTest"></span><span id="_CPPv28extGTest"></span><span id="extGTest"></span><span class="target" id="de/d73/namespaceext_g_test"></span><span class="k"><span class="pre">namespace</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">extGTest</span></span></span><a class="headerlink" href="#_CPPv48extGTest" title="Link to this definition"></a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-enums">Enums</p>
+<dl class="cpp enum">
+<dt class="sig sig-object cpp" id="_CPPv4N8extGTest10align_typeE">
+<span id="_CPPv3N8extGTest10align_typeE"></span><span id="_CPPv2N8extGTest10align_typeE"></span><span class="target" id="de/d73/namespaceext_g_test_1a13d95bb44da65707d69ada2ab4a88868"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">align_type</span></span></span><a class="headerlink" href="#_CPPv4N8extGTest10align_typeE" title="Link to this definition"></a><br /></dt>
+<dd><p>Text align inside the box. </p>
+<p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N8extGTest10align_type4LEFTE">
+<span id="_CPPv3N8extGTest10align_type4LEFTE"></span><span id="_CPPv2N8extGTest10align_type4LEFTE"></span><span class="target" id="de/d73/namespaceext_g_test_1a13d95bb44da65707d69ada2ab4a88868a5da143b9dbbf3e2a22107095734ddfe0"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">LEFT</span></span></span><a class="headerlink" href="#_CPPv4N8extGTest10align_type4LEFTE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N8extGTest10align_type5RIGHTE">
+<span id="_CPPv3N8extGTest10align_type5RIGHTE"></span><span id="_CPPv2N8extGTest10align_type5RIGHTE"></span><span class="target" id="de/d73/namespaceext_g_test_1a13d95bb44da65707d69ada2ab4a88868a4efbf1e292315f89f829e25a906ab139"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">RIGHT</span></span></span><a class="headerlink" href="#_CPPv4N8extGTest10align_type5RIGHTE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-functions">Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8extGTest10gtest_lineENSt6stringENSt6stringENSt6stringE10align_type">
+<span id="_CPPv3N8extGTest10gtest_lineENSt6stringENSt6stringENSt6stringE10align_type"></span><span id="_CPPv2N8extGTest10gtest_lineENSt6stringENSt6stringENSt6stringE10align_type"></span><span id="extGTest::gtest_line__ss.ss.ss.align_type"></span><span class="target" id="de/d73/namespaceext_g_test_1a1131dde6fd28399da411d6d16794022f"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">gtest_line</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">box_content</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">message</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">color</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N8extGTest6COLORSE" title="extGTest::COLORS"><span class="n"><span class="pre">COLORS</span></span></a><span class="p"><span class="pre">.</span></span><span class="n"><span class="pre">DEFAULT</span></span>, <a class="reference internal" href="#_CPPv4N8extGTest10align_typeE" title="extGTest::align_type"><span class="n"><span class="pre">align_type</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">align</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">LEFT</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8extGTest10gtest_lineENSt6stringENSt6stringENSt6stringE10align_type" title="Link to this definition"></a><br /></dt>
+<dd><p>Returns a string in the same format as the standard GoogleTest output. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>box_content</strong> – Text inside the left box </p></li>
+<li><p><strong>message</strong> – Text after the box </p></li>
+<li><p><strong>color</strong> – Color of the message text </p></li>
+<li><p><strong>align</strong> – Alignment of the text inside the box </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>std::string The formatted string </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8extGTest13myASSERT_THATEDaDaNSt6stringENSt6stringENSt6stringE10align_type">
+<span id="_CPPv3N8extGTest13myASSERT_THATEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="_CPPv2N8extGTest13myASSERT_THATEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="extGTest::myASSERT_THAT__auto.auto.ss.ss.ss.align_type"></span><span class="target" id="de/d73/namespaceext_g_test_1a0bdcbf55fb8004ef77affc8daed66725"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">myASSERT_THAT</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">test</span></span>, <span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">expectation</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">box_text</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">message</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">color</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N8extGTest6COLORSE" title="extGTest::COLORS"><span class="n"><span class="pre">COLORS</span></span></a><span class="p"><span class="pre">.</span></span><span class="n"><span class="pre">DEFAULT</span></span>, <a class="reference internal" href="#_CPPv4N8extGTest10align_typeE" title="extGTest::align_type"><span class="n"><span class="pre">align_type</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">align</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">LEFT</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8extGTest13myASSERT_THATEDaDaNSt6stringENSt6stringENSt6stringE10align_type" title="Link to this definition"></a><br /></dt>
+<dd><p>Wrapper for GoogleTest macro ASSERT_THAT that prints additional information in the same format as the test summary. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test</strong> – Test result </p></li>
+<li><p><strong>expectation</strong> – Expected result </p></li>
+<li><p><strong>box_text</strong> – Text inside the left box </p></li>
+<li><p><strong>message</strong> – Text after the box </p></li>
+<li><p><strong>color</strong> – Color of the message text </p></li>
+<li><p><strong>align</strong> – Alignment of the text inside the box </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8extGTest13myASSERT_TRUEEDaDaNSt6stringENSt6stringENSt6stringE10align_type">
+<span id="_CPPv3N8extGTest13myASSERT_TRUEEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="_CPPv2N8extGTest13myASSERT_TRUEEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="extGTest::myASSERT_TRUE__auto.auto.ss.ss.ss.align_type"></span><span class="target" id="de/d73/namespaceext_g_test_1abf1434107d88339599a1e34fa00cd5eb"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">myASSERT_TRUE</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">test</span></span>, <span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">expectation</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">box_text</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">message</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">color</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N8extGTest6COLORSE" title="extGTest::COLORS"><span class="n"><span class="pre">COLORS</span></span></a><span class="p"><span class="pre">.</span></span><span class="n"><span class="pre">DEFAULT</span></span>, <a class="reference internal" href="#_CPPv4N8extGTest10align_typeE" title="extGTest::align_type"><span class="n"><span class="pre">align_type</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">align</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">LEFT</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8extGTest13myASSERT_TRUEEDaDaNSt6stringENSt6stringENSt6stringE10align_type" title="Link to this definition"></a><br /></dt>
+<dd><p>Wrapper for GoogleTest macro ASSERT_TRUE that prints additional information in the same format as the test summary. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test</strong> – Test result </p></li>
+<li><p><strong>expectation</strong> – Expected result </p></li>
+<li><p><strong>box_text</strong> – Text inside the left box </p></li>
+<li><p><strong>message</strong> – Text after the box </p></li>
+<li><p><strong>color</strong> – Color of the message text </p></li>
+<li><p><strong>align</strong> – Alignment of the text inside the box </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8extGTest14myASSERT_FALSEEDaDaNSt6stringENSt6stringENSt6stringE10align_type">
+<span id="_CPPv3N8extGTest14myASSERT_FALSEEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="_CPPv2N8extGTest14myASSERT_FALSEEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="extGTest::myASSERT_FALSE__auto.auto.ss.ss.ss.align_type"></span><span class="target" id="de/d73/namespaceext_g_test_1a8197f95ed91e8a95f59cc57d00ea4d8c"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">myASSERT_FALSE</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">test</span></span>, <span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">expectation</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">box_text</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">message</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">color</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N8extGTest6COLORSE" title="extGTest::COLORS"><span class="n"><span class="pre">COLORS</span></span></a><span class="p"><span class="pre">.</span></span><span class="n"><span class="pre">DEFAULT</span></span>, <a class="reference internal" href="#_CPPv4N8extGTest10align_typeE" title="extGTest::align_type"><span class="n"><span class="pre">align_type</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">align</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">LEFT</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8extGTest14myASSERT_FALSEEDaDaNSt6stringENSt6stringENSt6stringE10align_type" title="Link to this definition"></a><br /></dt>
+<dd><p>Wrapper for GoogleTest macro ASSERT_FALSE that prints additional information in the same format as the test summary. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test</strong> – Test result </p></li>
+<li><p><strong>expectation</strong> – Expected result </p></li>
+<li><p><strong>box_text</strong> – Text inside the left box </p></li>
+<li><p><strong>message</strong> – Text after the box </p></li>
+<li><p><strong>color</strong> – Color of the message text </p></li>
+<li><p><strong>align</strong> – Alignment of the text inside the box </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8extGTest11myASSERT_EQEDaDaNSt6stringENSt6stringENSt6stringE10align_type">
+<span id="_CPPv3N8extGTest11myASSERT_EQEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="_CPPv2N8extGTest11myASSERT_EQEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="extGTest::myASSERT_EQ__auto.auto.ss.ss.ss.align_type"></span><span class="target" id="de/d73/namespaceext_g_test_1adcd085fe9b449b8ddd3a806b822deaf2"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">myASSERT_EQ</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">test</span></span>, <span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">expectation</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">box_text</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">message</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">color</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N8extGTest6COLORSE" title="extGTest::COLORS"><span class="n"><span class="pre">COLORS</span></span></a><span class="p"><span class="pre">.</span></span><span class="n"><span class="pre">DEFAULT</span></span>, <a class="reference internal" href="#_CPPv4N8extGTest10align_typeE" title="extGTest::align_type"><span class="n"><span class="pre">align_type</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">align</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">LEFT</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8extGTest11myASSERT_EQEDaDaNSt6stringENSt6stringENSt6stringE10align_type" title="Link to this definition"></a><br /></dt>
+<dd><p>Wrapper for GoogleTest macro ASSERT_EQ that prints additional information in the same format as the test summary. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test</strong> – Test result </p></li>
+<li><p><strong>expectation</strong> – Expected result </p></li>
+<li><p><strong>box_text</strong> – Text inside the left box </p></li>
+<li><p><strong>message</strong> – Text after the box </p></li>
+<li><p><strong>color</strong> – Color of the message text </p></li>
+<li><p><strong>align</strong> – Alignment of the text inside the box </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8extGTest11myASSERT_NEEDaDaNSt6stringENSt6stringENSt6stringE10align_type">
+<span id="_CPPv3N8extGTest11myASSERT_NEEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="_CPPv2N8extGTest11myASSERT_NEEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="extGTest::myASSERT_NE__auto.auto.ss.ss.ss.align_type"></span><span class="target" id="de/d73/namespaceext_g_test_1a51e7769f7063b7169e95e23a5140cf49"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">myASSERT_NE</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">test</span></span>, <span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">expectation</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">box_text</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">message</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">color</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N8extGTest6COLORSE" title="extGTest::COLORS"><span class="n"><span class="pre">COLORS</span></span></a><span class="p"><span class="pre">.</span></span><span class="n"><span class="pre">DEFAULT</span></span>, <a class="reference internal" href="#_CPPv4N8extGTest10align_typeE" title="extGTest::align_type"><span class="n"><span class="pre">align_type</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">align</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">LEFT</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8extGTest11myASSERT_NEEDaDaNSt6stringENSt6stringENSt6stringE10align_type" title="Link to this definition"></a><br /></dt>
+<dd><p>Wrapper for GoogleTest macro ASSERT_NE that prints additional information in the same format as the test summary. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test</strong> – Test result </p></li>
+<li><p><strong>expectation</strong> – Expected result </p></li>
+<li><p><strong>box_text</strong> – Text inside the left box </p></li>
+<li><p><strong>message</strong> – Text after the box </p></li>
+<li><p><strong>color</strong> – Color of the message text </p></li>
+<li><p><strong>align</strong> – Alignment of the text inside the box </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8extGTest11myASSERT_LTEDaDaNSt6stringENSt6stringENSt6stringE10align_type">
+<span id="_CPPv3N8extGTest11myASSERT_LTEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="_CPPv2N8extGTest11myASSERT_LTEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="extGTest::myASSERT_LT__auto.auto.ss.ss.ss.align_type"></span><span class="target" id="de/d73/namespaceext_g_test_1ad3285435d85cd1ecca51fb9bfb0d6bbf"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">myASSERT_LT</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">test</span></span>, <span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">expectation</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">box_text</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">message</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">color</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N8extGTest6COLORSE" title="extGTest::COLORS"><span class="n"><span class="pre">COLORS</span></span></a><span class="p"><span class="pre">.</span></span><span class="n"><span class="pre">DEFAULT</span></span>, <a class="reference internal" href="#_CPPv4N8extGTest10align_typeE" title="extGTest::align_type"><span class="n"><span class="pre">align_type</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">align</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">LEFT</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8extGTest11myASSERT_LTEDaDaNSt6stringENSt6stringENSt6stringE10align_type" title="Link to this definition"></a><br /></dt>
+<dd><p>Wrapper for GoogleTest macro ASSERT_LT that prints additional information in the same format as the test summary. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test</strong> – Test result </p></li>
+<li><p><strong>expectation</strong> – Expected result </p></li>
+<li><p><strong>box_text</strong> – Text inside the left box </p></li>
+<li><p><strong>message</strong> – Text after the box </p></li>
+<li><p><strong>color</strong> – Color of the message text </p></li>
+<li><p><strong>align</strong> – Alignment of the text inside the box </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8extGTest11myASSERT_GTEDaDaNSt6stringENSt6stringENSt6stringE10align_type">
+<span id="_CPPv3N8extGTest11myASSERT_GTEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="_CPPv2N8extGTest11myASSERT_GTEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="extGTest::myASSERT_GT__auto.auto.ss.ss.ss.align_type"></span><span class="target" id="de/d73/namespaceext_g_test_1afba2ba7984cee25892ea7c52f739b7b1"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">myASSERT_GT</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">test</span></span>, <span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">expectation</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">box_text</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">message</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">color</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N8extGTest6COLORSE" title="extGTest::COLORS"><span class="n"><span class="pre">COLORS</span></span></a><span class="p"><span class="pre">.</span></span><span class="n"><span class="pre">DEFAULT</span></span>, <a class="reference internal" href="#_CPPv4N8extGTest10align_typeE" title="extGTest::align_type"><span class="n"><span class="pre">align_type</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">align</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">LEFT</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8extGTest11myASSERT_GTEDaDaNSt6stringENSt6stringENSt6stringE10align_type" title="Link to this definition"></a><br /></dt>
+<dd><p>Wrapper for GoogleTest macro ASSERT_GT that prints additional information in the same format as the test summary. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test</strong> – Test result </p></li>
+<li><p><strong>expectation</strong> – Expected result </p></li>
+<li><p><strong>box_text</strong> – Text inside the left box </p></li>
+<li><p><strong>message</strong> – Text after the box </p></li>
+<li><p><strong>color</strong> – Color of the message text </p></li>
+<li><p><strong>align</strong> – Alignment of the text inside the box </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8extGTest11myASSERT_LEEDaDaNSt6stringENSt6stringENSt6stringE10align_type">
+<span id="_CPPv3N8extGTest11myASSERT_LEEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="_CPPv2N8extGTest11myASSERT_LEEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="extGTest::myASSERT_LE__auto.auto.ss.ss.ss.align_type"></span><span class="target" id="de/d73/namespaceext_g_test_1a771a373faeb80b9866f35b94c32ed03a"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">myASSERT_LE</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">test</span></span>, <span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">expectation</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">box_text</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">message</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">color</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N8extGTest6COLORSE" title="extGTest::COLORS"><span class="n"><span class="pre">COLORS</span></span></a><span class="p"><span class="pre">.</span></span><span class="n"><span class="pre">DEFAULT</span></span>, <a class="reference internal" href="#_CPPv4N8extGTest10align_typeE" title="extGTest::align_type"><span class="n"><span class="pre">align_type</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">align</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">LEFT</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8extGTest11myASSERT_LEEDaDaNSt6stringENSt6stringENSt6stringE10align_type" title="Link to this definition"></a><br /></dt>
+<dd><p>Wrapper for GoogleTest macro ASSERT_LE that prints additional information in the same format as the test summary. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test</strong> – Test result </p></li>
+<li><p><strong>expectation</strong> – Expected result </p></li>
+<li><p><strong>box_text</strong> – Text inside the left box </p></li>
+<li><p><strong>message</strong> – Text after the box </p></li>
+<li><p><strong>color</strong> – Color of the message text </p></li>
+<li><p><strong>align</strong> – Alignment of the text inside the box </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8extGTest11myASSERT_GEEDaDaNSt6stringENSt6stringENSt6stringE10align_type">
+<span id="_CPPv3N8extGTest11myASSERT_GEEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="_CPPv2N8extGTest11myASSERT_GEEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="extGTest::myASSERT_GE__auto.auto.ss.ss.ss.align_type"></span><span class="target" id="de/d73/namespaceext_g_test_1a4e355f819f5aafecaaf2e56c28d57cb4"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">myASSERT_GE</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">test</span></span>, <span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">expectation</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">box_text</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">message</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">color</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N8extGTest6COLORSE" title="extGTest::COLORS"><span class="n"><span class="pre">COLORS</span></span></a><span class="p"><span class="pre">.</span></span><span class="n"><span class="pre">DEFAULT</span></span>, <a class="reference internal" href="#_CPPv4N8extGTest10align_typeE" title="extGTest::align_type"><span class="n"><span class="pre">align_type</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">align</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">LEFT</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8extGTest11myASSERT_GEEDaDaNSt6stringENSt6stringENSt6stringE10align_type" title="Link to this definition"></a><br /></dt>
+<dd><p>Wrapper for GoogleTest macro ASSERT_GE that prints additional information in the same format as the test summary. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test</strong> – Test result </p></li>
+<li><p><strong>expectation</strong> – Expected result </p></li>
+<li><p><strong>box_text</strong> – Text inside the left box </p></li>
+<li><p><strong>message</strong> – Text after the box </p></li>
+<li><p><strong>color</strong> – Color of the message text </p></li>
+<li><p><strong>align</strong> – Alignment of the text inside the box </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8extGTest14myASSERT_STREQEDaDaNSt6stringENSt6stringENSt6stringE10align_type">
+<span id="_CPPv3N8extGTest14myASSERT_STREQEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="_CPPv2N8extGTest14myASSERT_STREQEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="extGTest::myASSERT_STREQ__auto.auto.ss.ss.ss.align_type"></span><span class="target" id="de/d73/namespaceext_g_test_1a70fe77ab91a2076b70f20b4e6181f6fe"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">myASSERT_STREQ</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">test</span></span>, <span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">expectation</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">box_text</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">message</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">color</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N8extGTest6COLORSE" title="extGTest::COLORS"><span class="n"><span class="pre">COLORS</span></span></a><span class="p"><span class="pre">.</span></span><span class="n"><span class="pre">DEFAULT</span></span>, <a class="reference internal" href="#_CPPv4N8extGTest10align_typeE" title="extGTest::align_type"><span class="n"><span class="pre">align_type</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">align</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">LEFT</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8extGTest14myASSERT_STREQEDaDaNSt6stringENSt6stringENSt6stringE10align_type" title="Link to this definition"></a><br /></dt>
+<dd><p>Wrapper for GoogleTest macro ASSERT_STREQ that prints additional information in the same format as the test summary. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test</strong> – Test result </p></li>
+<li><p><strong>expectation</strong> – Expected result </p></li>
+<li><p><strong>box_text</strong> – Text inside the left box </p></li>
+<li><p><strong>message</strong> – Text after the box </p></li>
+<li><p><strong>color</strong> – Color of the message text </p></li>
+<li><p><strong>align</strong> – Alignment of the text inside the box </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8extGTest14myASSERT_STRNEEDaDaNSt6stringENSt6stringENSt6stringE10align_type">
+<span id="_CPPv3N8extGTest14myASSERT_STRNEEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="_CPPv2N8extGTest14myASSERT_STRNEEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="extGTest::myASSERT_STRNE__auto.auto.ss.ss.ss.align_type"></span><span class="target" id="de/d73/namespaceext_g_test_1ad71ab656bf3e9ca1ee7b546d302cbb74"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">myASSERT_STRNE</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">test</span></span>, <span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">expectation</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">box_text</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">message</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">color</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N8extGTest6COLORSE" title="extGTest::COLORS"><span class="n"><span class="pre">COLORS</span></span></a><span class="p"><span class="pre">.</span></span><span class="n"><span class="pre">DEFAULT</span></span>, <a class="reference internal" href="#_CPPv4N8extGTest10align_typeE" title="extGTest::align_type"><span class="n"><span class="pre">align_type</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">align</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">LEFT</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8extGTest14myASSERT_STRNEEDaDaNSt6stringENSt6stringENSt6stringE10align_type" title="Link to this definition"></a><br /></dt>
+<dd><p>Wrapper for GoogleTest macro ASSERT_STRNE that prints additional information in the same format as the test summary. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test</strong> – Test result </p></li>
+<li><p><strong>expectation</strong> – Expected result </p></li>
+<li><p><strong>box_text</strong> – Text inside the left box </p></li>
+<li><p><strong>message</strong> – Text after the box </p></li>
+<li><p><strong>color</strong> – Color of the message text </p></li>
+<li><p><strong>align</strong> – Alignment of the text inside the box </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8extGTest18myASSERT_STRCASEEQEDaDaNSt6stringENSt6stringENSt6stringE10align_type">
+<span id="_CPPv3N8extGTest18myASSERT_STRCASEEQEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="_CPPv2N8extGTest18myASSERT_STRCASEEQEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="extGTest::myASSERT_STRCASEEQ__auto.auto.ss.ss.ss.align_type"></span><span class="target" id="de/d73/namespaceext_g_test_1adcd59bf7b0a3edb205972320df4ae071"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">myASSERT_STRCASEEQ</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">test</span></span>, <span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">expectation</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">box_text</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">message</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">color</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N8extGTest6COLORSE" title="extGTest::COLORS"><span class="n"><span class="pre">COLORS</span></span></a><span class="p"><span class="pre">.</span></span><span class="n"><span class="pre">DEFAULT</span></span>, <a class="reference internal" href="#_CPPv4N8extGTest10align_typeE" title="extGTest::align_type"><span class="n"><span class="pre">align_type</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">align</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">LEFT</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8extGTest18myASSERT_STRCASEEQEDaDaNSt6stringENSt6stringENSt6stringE10align_type" title="Link to this definition"></a><br /></dt>
+<dd><p>Wrapper for GoogleTest macro ASSERT_STRCASEEQ that prints additional information in the same format as the test summary. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test</strong> – Test result </p></li>
+<li><p><strong>expectation</strong> – Expected result </p></li>
+<li><p><strong>box_text</strong> – Text inside the left box </p></li>
+<li><p><strong>message</strong> – Text after the box </p></li>
+<li><p><strong>color</strong> – Color of the message text </p></li>
+<li><p><strong>align</strong> – Alignment of the text inside the box </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8extGTest18myASSERT_STRCASENEEDaDaNSt6stringENSt6stringENSt6stringE10align_type">
+<span id="_CPPv3N8extGTest18myASSERT_STRCASENEEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="_CPPv2N8extGTest18myASSERT_STRCASENEEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="extGTest::myASSERT_STRCASENE__auto.auto.ss.ss.ss.align_type"></span><span class="target" id="de/d73/namespaceext_g_test_1a3431206847e1cf69d296e7361b420632"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">myASSERT_STRCASENE</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">test</span></span>, <span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">expectation</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">box_text</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">message</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">color</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N8extGTest6COLORSE" title="extGTest::COLORS"><span class="n"><span class="pre">COLORS</span></span></a><span class="p"><span class="pre">.</span></span><span class="n"><span class="pre">DEFAULT</span></span>, <a class="reference internal" href="#_CPPv4N8extGTest10align_typeE" title="extGTest::align_type"><span class="n"><span class="pre">align_type</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">align</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">LEFT</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8extGTest18myASSERT_STRCASENEEDaDaNSt6stringENSt6stringENSt6stringE10align_type" title="Link to this definition"></a><br /></dt>
+<dd><p>Wrapper for GoogleTest macro ASSERT_STRCASENE that prints additional information in the same format as the test summary. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test</strong> – Test result </p></li>
+<li><p><strong>expectation</strong> – Expected result </p></li>
+<li><p><strong>box_text</strong> – Text inside the left box </p></li>
+<li><p><strong>message</strong> – Text after the box </p></li>
+<li><p><strong>color</strong> – Color of the message text </p></li>
+<li><p><strong>align</strong> – Alignment of the text inside the box </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8extGTest17myASSERT_FLOAT_EQEDaDaNSt6stringENSt6stringENSt6stringE10align_type">
+<span id="_CPPv3N8extGTest17myASSERT_FLOAT_EQEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="_CPPv2N8extGTest17myASSERT_FLOAT_EQEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="extGTest::myASSERT_FLOAT_EQ__auto.auto.ss.ss.ss.align_type"></span><span class="target" id="de/d73/namespaceext_g_test_1a8e842cd6df6dc0fecdaa47f662c03dc8"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">myASSERT_FLOAT_EQ</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">test</span></span>, <span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">expectation</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">box_text</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">message</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">color</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N8extGTest6COLORSE" title="extGTest::COLORS"><span class="n"><span class="pre">COLORS</span></span></a><span class="p"><span class="pre">.</span></span><span class="n"><span class="pre">DEFAULT</span></span>, <a class="reference internal" href="#_CPPv4N8extGTest10align_typeE" title="extGTest::align_type"><span class="n"><span class="pre">align_type</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">align</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">LEFT</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8extGTest17myASSERT_FLOAT_EQEDaDaNSt6stringENSt6stringENSt6stringE10align_type" title="Link to this definition"></a><br /></dt>
+<dd><p>Wrapper for GoogleTest macro ASSERT_FLOAT_EQ that prints additional information in the same format as the test summary. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test</strong> – Test result </p></li>
+<li><p><strong>expectation</strong> – Expected result </p></li>
+<li><p><strong>box_text</strong> – Text inside the left box </p></li>
+<li><p><strong>message</strong> – Text after the box </p></li>
+<li><p><strong>color</strong> – Color of the message text </p></li>
+<li><p><strong>align</strong> – Alignment of the text inside the box </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8extGTest18myASSERT_DOUBLE_EQEDaDaNSt6stringENSt6stringENSt6stringE10align_type">
+<span id="_CPPv3N8extGTest18myASSERT_DOUBLE_EQEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="_CPPv2N8extGTest18myASSERT_DOUBLE_EQEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="extGTest::myASSERT_DOUBLE_EQ__auto.auto.ss.ss.ss.align_type"></span><span class="target" id="de/d73/namespaceext_g_test_1a7f1d2f204f87e4b1e1a5e48b29aa0e97"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">myASSERT_DOUBLE_EQ</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">test</span></span>, <span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">expectation</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">box_text</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">message</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">color</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N8extGTest6COLORSE" title="extGTest::COLORS"><span class="n"><span class="pre">COLORS</span></span></a><span class="p"><span class="pre">.</span></span><span class="n"><span class="pre">DEFAULT</span></span>, <a class="reference internal" href="#_CPPv4N8extGTest10align_typeE" title="extGTest::align_type"><span class="n"><span class="pre">align_type</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">align</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">LEFT</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8extGTest18myASSERT_DOUBLE_EQEDaDaNSt6stringENSt6stringENSt6stringE10align_type" title="Link to this definition"></a><br /></dt>
+<dd><p>Wrapper for GoogleTest macro ASSERT_DOUBLE_EQ that prints additional information in the same format as the test summary. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test</strong> – Test result </p></li>
+<li><p><strong>expectation</strong> – Expected result </p></li>
+<li><p><strong>box_text</strong> – Text inside the left box </p></li>
+<li><p><strong>message</strong> – Text after the box </p></li>
+<li><p><strong>color</strong> – Color of the message text </p></li>
+<li><p><strong>align</strong> – Alignment of the text inside the box </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8extGTest13myASSERT_NEAREDaDaNSt6stringENSt6stringENSt6stringE10align_type">
+<span id="_CPPv3N8extGTest13myASSERT_NEAREDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="_CPPv2N8extGTest13myASSERT_NEAREDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="extGTest::myASSERT_NEAR__auto.auto.ss.ss.ss.align_type"></span><span class="target" id="de/d73/namespaceext_g_test_1a1e23bcbdd7b97624ebc1402ca593892d"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">myASSERT_NEAR</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">test</span></span>, <span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">expectation</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">box_text</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">message</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">color</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N8extGTest6COLORSE" title="extGTest::COLORS"><span class="n"><span class="pre">COLORS</span></span></a><span class="p"><span class="pre">.</span></span><span class="n"><span class="pre">DEFAULT</span></span>, <a class="reference internal" href="#_CPPv4N8extGTest10align_typeE" title="extGTest::align_type"><span class="n"><span class="pre">align_type</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">align</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">LEFT</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8extGTest13myASSERT_NEAREDaDaNSt6stringENSt6stringENSt6stringE10align_type" title="Link to this definition"></a><br /></dt>
+<dd><p>Wrapper for GoogleTest macro ASSERT_NEAR that prints additional information in the same format as the test summary. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test</strong> – Test result </p></li>
+<li><p><strong>expectation</strong> – Expected result </p></li>
+<li><p><strong>box_text</strong> – Text inside the left box </p></li>
+<li><p><strong>message</strong> – Text after the box </p></li>
+<li><p><strong>color</strong> – Color of the message text </p></li>
+<li><p><strong>align</strong> – Alignment of the text inside the box </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8extGTest14myASSERT_THROWEDaDaNSt6stringENSt6stringENSt6stringE10align_type">
+<span id="_CPPv3N8extGTest14myASSERT_THROWEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="_CPPv2N8extGTest14myASSERT_THROWEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="extGTest::myASSERT_THROW__auto.auto.ss.ss.ss.align_type"></span><span class="target" id="de/d73/namespaceext_g_test_1a96470f039555925dd8a7303169daebf5"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">myASSERT_THROW</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">test</span></span>, <span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">expectation</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">box_text</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">message</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">color</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N8extGTest6COLORSE" title="extGTest::COLORS"><span class="n"><span class="pre">COLORS</span></span></a><span class="p"><span class="pre">.</span></span><span class="n"><span class="pre">DEFAULT</span></span>, <a class="reference internal" href="#_CPPv4N8extGTest10align_typeE" title="extGTest::align_type"><span class="n"><span class="pre">align_type</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">align</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">LEFT</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8extGTest14myASSERT_THROWEDaDaNSt6stringENSt6stringENSt6stringE10align_type" title="Link to this definition"></a><br /></dt>
+<dd><p>Wrapper for GoogleTest macro ASSERT_THROW that prints additional information in the same format as the test summary. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test</strong> – Test result </p></li>
+<li><p><strong>expectation</strong> – Expected result </p></li>
+<li><p><strong>box_text</strong> – Text inside the left box </p></li>
+<li><p><strong>message</strong> – Text after the box </p></li>
+<li><p><strong>color</strong> – Color of the message text </p></li>
+<li><p><strong>align</strong> – Alignment of the text inside the box </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8extGTest18myASSERT_ANY_THROWEDaDaNSt6stringENSt6stringENSt6stringE10align_type">
+<span id="_CPPv3N8extGTest18myASSERT_ANY_THROWEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="_CPPv2N8extGTest18myASSERT_ANY_THROWEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="extGTest::myASSERT_ANY_THROW__auto.auto.ss.ss.ss.align_type"></span><span class="target" id="de/d73/namespaceext_g_test_1a2acc66322bbce783b273a2e1f74699af"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">myASSERT_ANY_THROW</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">test</span></span>, <span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">expectation</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">box_text</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">message</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">color</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N8extGTest6COLORSE" title="extGTest::COLORS"><span class="n"><span class="pre">COLORS</span></span></a><span class="p"><span class="pre">.</span></span><span class="n"><span class="pre">DEFAULT</span></span>, <a class="reference internal" href="#_CPPv4N8extGTest10align_typeE" title="extGTest::align_type"><span class="n"><span class="pre">align_type</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">align</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">LEFT</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8extGTest18myASSERT_ANY_THROWEDaDaNSt6stringENSt6stringENSt6stringE10align_type" title="Link to this definition"></a><br /></dt>
+<dd><p>Wrapper for GoogleTest macro ASSERT_ANY_THROW that prints additional information in the same format as the test summary. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test</strong> – Test result </p></li>
+<li><p><strong>expectation</strong> – Expected result </p></li>
+<li><p><strong>box_text</strong> – Text inside the left box </p></li>
+<li><p><strong>message</strong> – Text after the box </p></li>
+<li><p><strong>color</strong> – Color of the message text </p></li>
+<li><p><strong>align</strong> – Alignment of the text inside the box </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8extGTest17myASSERT_NO_THROWEDaDaNSt6stringENSt6stringENSt6stringE10align_type">
+<span id="_CPPv3N8extGTest17myASSERT_NO_THROWEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="_CPPv2N8extGTest17myASSERT_NO_THROWEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="extGTest::myASSERT_NO_THROW__auto.auto.ss.ss.ss.align_type"></span><span class="target" id="de/d73/namespaceext_g_test_1a3cbdd3502ca771f17ca353bb7c66139d"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">myASSERT_NO_THROW</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">test</span></span>, <span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">expectation</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">box_text</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">message</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">color</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N8extGTest6COLORSE" title="extGTest::COLORS"><span class="n"><span class="pre">COLORS</span></span></a><span class="p"><span class="pre">.</span></span><span class="n"><span class="pre">DEFAULT</span></span>, <a class="reference internal" href="#_CPPv4N8extGTest10align_typeE" title="extGTest::align_type"><span class="n"><span class="pre">align_type</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">align</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">LEFT</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8extGTest17myASSERT_NO_THROWEDaDaNSt6stringENSt6stringENSt6stringE10align_type" title="Link to this definition"></a><br /></dt>
+<dd><p>Wrapper for GoogleTest macro ASSERT_NO_THROW that prints additional information in the same format as the test summary. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test</strong> – Test result </p></li>
+<li><p><strong>expectation</strong> – Expected result </p></li>
+<li><p><strong>box_text</strong> – Text inside the left box </p></li>
+<li><p><strong>message</strong> – Text after the box </p></li>
+<li><p><strong>color</strong> – Color of the message text </p></li>
+<li><p><strong>align</strong> – Alignment of the text inside the box </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8extGTest13myEXPECT_THATEDaDaNSt6stringENSt6stringENSt6stringE10align_type">
+<span id="_CPPv3N8extGTest13myEXPECT_THATEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="_CPPv2N8extGTest13myEXPECT_THATEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="extGTest::myEXPECT_THAT__auto.auto.ss.ss.ss.align_type"></span><span class="target" id="de/d73/namespaceext_g_test_1ae6fc5cea59f5d7853c392e2d574c0bb2"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">myEXPECT_THAT</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">test</span></span>, <span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">expectation</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">box_text</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">message</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">color</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N8extGTest6COLORSE" title="extGTest::COLORS"><span class="n"><span class="pre">COLORS</span></span></a><span class="p"><span class="pre">.</span></span><span class="n"><span class="pre">DEFAULT</span></span>, <a class="reference internal" href="#_CPPv4N8extGTest10align_typeE" title="extGTest::align_type"><span class="n"><span class="pre">align_type</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">align</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">LEFT</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8extGTest13myEXPECT_THATEDaDaNSt6stringENSt6stringENSt6stringE10align_type" title="Link to this definition"></a><br /></dt>
+<dd><p>Wrapper for GoogleTest macro EXPECT_THAT that prints additional information in the same format as the test summary. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test</strong> – Test result </p></li>
+<li><p><strong>expectation</strong> – Expected result </p></li>
+<li><p><strong>box_text</strong> – Text inside the left box </p></li>
+<li><p><strong>message</strong> – Text after the box </p></li>
+<li><p><strong>color</strong> – Color of the message text </p></li>
+<li><p><strong>align</strong> – Alignment of the text inside the box </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8extGTest13myEXPECT_TRUEEDaDaNSt6stringENSt6stringENSt6stringE10align_type">
+<span id="_CPPv3N8extGTest13myEXPECT_TRUEEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="_CPPv2N8extGTest13myEXPECT_TRUEEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="extGTest::myEXPECT_TRUE__auto.auto.ss.ss.ss.align_type"></span><span class="target" id="de/d73/namespaceext_g_test_1a4ae6ebe41202f93dbfedb0a9a0489c91"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">myEXPECT_TRUE</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">test</span></span>, <span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">expectation</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">box_text</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">message</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">color</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N8extGTest6COLORSE" title="extGTest::COLORS"><span class="n"><span class="pre">COLORS</span></span></a><span class="p"><span class="pre">.</span></span><span class="n"><span class="pre">DEFAULT</span></span>, <a class="reference internal" href="#_CPPv4N8extGTest10align_typeE" title="extGTest::align_type"><span class="n"><span class="pre">align_type</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">align</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">LEFT</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8extGTest13myEXPECT_TRUEEDaDaNSt6stringENSt6stringENSt6stringE10align_type" title="Link to this definition"></a><br /></dt>
+<dd><p>Wrapper for GoogleTest macro EXPECT_TRUE that prints additional information in the same format as the test summary. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test</strong> – Test result </p></li>
+<li><p><strong>expectation</strong> – Expected result </p></li>
+<li><p><strong>box_text</strong> – Text inside the left box </p></li>
+<li><p><strong>message</strong> – Text after the box </p></li>
+<li><p><strong>color</strong> – Color of the message text </p></li>
+<li><p><strong>align</strong> – Alignment of the text inside the box </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8extGTest14myEXPECT_FALSEEDaDaNSt6stringENSt6stringENSt6stringE10align_type">
+<span id="_CPPv3N8extGTest14myEXPECT_FALSEEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="_CPPv2N8extGTest14myEXPECT_FALSEEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="extGTest::myEXPECT_FALSE__auto.auto.ss.ss.ss.align_type"></span><span class="target" id="de/d73/namespaceext_g_test_1a7c9830002f3163e10e22e171cfa0421d"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">myEXPECT_FALSE</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">test</span></span>, <span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">expectation</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">box_text</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">message</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">color</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N8extGTest6COLORSE" title="extGTest::COLORS"><span class="n"><span class="pre">COLORS</span></span></a><span class="p"><span class="pre">.</span></span><span class="n"><span class="pre">DEFAULT</span></span>, <a class="reference internal" href="#_CPPv4N8extGTest10align_typeE" title="extGTest::align_type"><span class="n"><span class="pre">align_type</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">align</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">LEFT</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8extGTest14myEXPECT_FALSEEDaDaNSt6stringENSt6stringENSt6stringE10align_type" title="Link to this definition"></a><br /></dt>
+<dd><p>Wrapper for GoogleTest macro EXPECT_FALSE that prints additional information in the same format as the test summary. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test</strong> – Test result </p></li>
+<li><p><strong>expectation</strong> – Expected result </p></li>
+<li><p><strong>box_text</strong> – Text inside the left box </p></li>
+<li><p><strong>message</strong> – Text after the box </p></li>
+<li><p><strong>color</strong> – Color of the message text </p></li>
+<li><p><strong>align</strong> – Alignment of the text inside the box </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8extGTest11myEXPECT_EQEDaDaNSt6stringENSt6stringENSt6stringE10align_type">
+<span id="_CPPv3N8extGTest11myEXPECT_EQEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="_CPPv2N8extGTest11myEXPECT_EQEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="extGTest::myEXPECT_EQ__auto.auto.ss.ss.ss.align_type"></span><span class="target" id="de/d73/namespaceext_g_test_1ae85f3e384dfa53f4e0337b16babd05bd"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">myEXPECT_EQ</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">test</span></span>, <span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">expectation</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">box_text</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">message</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">color</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N8extGTest6COLORSE" title="extGTest::COLORS"><span class="n"><span class="pre">COLORS</span></span></a><span class="p"><span class="pre">.</span></span><span class="n"><span class="pre">DEFAULT</span></span>, <a class="reference internal" href="#_CPPv4N8extGTest10align_typeE" title="extGTest::align_type"><span class="n"><span class="pre">align_type</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">align</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">LEFT</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8extGTest11myEXPECT_EQEDaDaNSt6stringENSt6stringENSt6stringE10align_type" title="Link to this definition"></a><br /></dt>
+<dd><p>Wrapper for GoogleTest macro EXPECT_EQ that prints additional information in the same format as the test summary. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test</strong> – Test result </p></li>
+<li><p><strong>expectation</strong> – Expected result </p></li>
+<li><p><strong>box_text</strong> – Text inside the left box </p></li>
+<li><p><strong>message</strong> – Text after the box </p></li>
+<li><p><strong>color</strong> – Color of the message text </p></li>
+<li><p><strong>align</strong> – Alignment of the text inside the box </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8extGTest11myEXPECT_NEEDaDaNSt6stringENSt6stringENSt6stringE10align_type">
+<span id="_CPPv3N8extGTest11myEXPECT_NEEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="_CPPv2N8extGTest11myEXPECT_NEEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="extGTest::myEXPECT_NE__auto.auto.ss.ss.ss.align_type"></span><span class="target" id="de/d73/namespaceext_g_test_1ade6dcc47500d278239615552c5d14c43"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">myEXPECT_NE</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">test</span></span>, <span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">expectation</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">box_text</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">message</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">color</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N8extGTest6COLORSE" title="extGTest::COLORS"><span class="n"><span class="pre">COLORS</span></span></a><span class="p"><span class="pre">.</span></span><span class="n"><span class="pre">DEFAULT</span></span>, <a class="reference internal" href="#_CPPv4N8extGTest10align_typeE" title="extGTest::align_type"><span class="n"><span class="pre">align_type</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">align</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">LEFT</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8extGTest11myEXPECT_NEEDaDaNSt6stringENSt6stringENSt6stringE10align_type" title="Link to this definition"></a><br /></dt>
+<dd><p>Wrapper for GoogleTest macro EXPECT_NE that prints additional information in the same format as the test summary. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test</strong> – Test result </p></li>
+<li><p><strong>expectation</strong> – Expected result </p></li>
+<li><p><strong>box_text</strong> – Text inside the left box </p></li>
+<li><p><strong>message</strong> – Text after the box </p></li>
+<li><p><strong>color</strong> – Color of the message text </p></li>
+<li><p><strong>align</strong> – Alignment of the text inside the box </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8extGTest11myEXPECT_LTEDaDaNSt6stringENSt6stringENSt6stringE10align_type">
+<span id="_CPPv3N8extGTest11myEXPECT_LTEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="_CPPv2N8extGTest11myEXPECT_LTEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="extGTest::myEXPECT_LT__auto.auto.ss.ss.ss.align_type"></span><span class="target" id="de/d73/namespaceext_g_test_1aba9c6f720bdd6305af6147d714e27163"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">myEXPECT_LT</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">test</span></span>, <span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">expectation</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">box_text</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">message</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">color</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N8extGTest6COLORSE" title="extGTest::COLORS"><span class="n"><span class="pre">COLORS</span></span></a><span class="p"><span class="pre">.</span></span><span class="n"><span class="pre">DEFAULT</span></span>, <a class="reference internal" href="#_CPPv4N8extGTest10align_typeE" title="extGTest::align_type"><span class="n"><span class="pre">align_type</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">align</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">LEFT</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8extGTest11myEXPECT_LTEDaDaNSt6stringENSt6stringENSt6stringE10align_type" title="Link to this definition"></a><br /></dt>
+<dd><p>Wrapper for GoogleTest macro EXPECT_LT that prints additional information in the same format as the test summary. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test</strong> – Test result </p></li>
+<li><p><strong>expectation</strong> – Expected result </p></li>
+<li><p><strong>box_text</strong> – Text inside the left box </p></li>
+<li><p><strong>message</strong> – Text after the box </p></li>
+<li><p><strong>color</strong> – Color of the message text </p></li>
+<li><p><strong>align</strong> – Alignment of the text inside the box </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8extGTest11myEXPECT_GTEDaDaNSt6stringENSt6stringENSt6stringE10align_type">
+<span id="_CPPv3N8extGTest11myEXPECT_GTEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="_CPPv2N8extGTest11myEXPECT_GTEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="extGTest::myEXPECT_GT__auto.auto.ss.ss.ss.align_type"></span><span class="target" id="de/d73/namespaceext_g_test_1a1602379efaa18bf65867d7150860b456"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">myEXPECT_GT</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">test</span></span>, <span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">expectation</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">box_text</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">message</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">color</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N8extGTest6COLORSE" title="extGTest::COLORS"><span class="n"><span class="pre">COLORS</span></span></a><span class="p"><span class="pre">.</span></span><span class="n"><span class="pre">DEFAULT</span></span>, <a class="reference internal" href="#_CPPv4N8extGTest10align_typeE" title="extGTest::align_type"><span class="n"><span class="pre">align_type</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">align</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">LEFT</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8extGTest11myEXPECT_GTEDaDaNSt6stringENSt6stringENSt6stringE10align_type" title="Link to this definition"></a><br /></dt>
+<dd><p>Wrapper for GoogleTest macro EXPECT_GT that prints additional information in the same format as the test summary. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test</strong> – Test result </p></li>
+<li><p><strong>expectation</strong> – Expected result </p></li>
+<li><p><strong>box_text</strong> – Text inside the left box </p></li>
+<li><p><strong>message</strong> – Text after the box </p></li>
+<li><p><strong>color</strong> – Color of the message text </p></li>
+<li><p><strong>align</strong> – Alignment of the text inside the box </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8extGTest11myEXPECT_LEEDaDaNSt6stringENSt6stringENSt6stringE10align_type">
+<span id="_CPPv3N8extGTest11myEXPECT_LEEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="_CPPv2N8extGTest11myEXPECT_LEEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="extGTest::myEXPECT_LE__auto.auto.ss.ss.ss.align_type"></span><span class="target" id="de/d73/namespaceext_g_test_1a392e014f9b700549414d231250429e19"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">myEXPECT_LE</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">test</span></span>, <span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">expectation</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">box_text</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">message</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">color</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N8extGTest6COLORSE" title="extGTest::COLORS"><span class="n"><span class="pre">COLORS</span></span></a><span class="p"><span class="pre">.</span></span><span class="n"><span class="pre">DEFAULT</span></span>, <a class="reference internal" href="#_CPPv4N8extGTest10align_typeE" title="extGTest::align_type"><span class="n"><span class="pre">align_type</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">align</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">LEFT</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8extGTest11myEXPECT_LEEDaDaNSt6stringENSt6stringENSt6stringE10align_type" title="Link to this definition"></a><br /></dt>
+<dd><p>Wrapper for GoogleTest macro EXPECT_LE that prints additional information in the same format as the test summary. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test</strong> – Test result </p></li>
+<li><p><strong>expectation</strong> – Expected result </p></li>
+<li><p><strong>box_text</strong> – Text inside the left box </p></li>
+<li><p><strong>message</strong> – Text after the box </p></li>
+<li><p><strong>color</strong> – Color of the message text </p></li>
+<li><p><strong>align</strong> – Alignment of the text inside the box </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8extGTest11myEXPECT_GEEDaDaNSt6stringENSt6stringENSt6stringE10align_type">
+<span id="_CPPv3N8extGTest11myEXPECT_GEEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="_CPPv2N8extGTest11myEXPECT_GEEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="extGTest::myEXPECT_GE__auto.auto.ss.ss.ss.align_type"></span><span class="target" id="de/d73/namespaceext_g_test_1a60f3a12621883c8494c3e08f35150892"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">myEXPECT_GE</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">test</span></span>, <span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">expectation</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">box_text</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">message</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">color</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N8extGTest6COLORSE" title="extGTest::COLORS"><span class="n"><span class="pre">COLORS</span></span></a><span class="p"><span class="pre">.</span></span><span class="n"><span class="pre">DEFAULT</span></span>, <a class="reference internal" href="#_CPPv4N8extGTest10align_typeE" title="extGTest::align_type"><span class="n"><span class="pre">align_type</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">align</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">LEFT</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8extGTest11myEXPECT_GEEDaDaNSt6stringENSt6stringENSt6stringE10align_type" title="Link to this definition"></a><br /></dt>
+<dd><p>Wrapper for GoogleTest macro EXPECT_GE that prints additional information in the same format as the test summary. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test</strong> – Test result </p></li>
+<li><p><strong>expectation</strong> – Expected result </p></li>
+<li><p><strong>box_text</strong> – Text inside the left box </p></li>
+<li><p><strong>message</strong> – Text after the box </p></li>
+<li><p><strong>color</strong> – Color of the message text </p></li>
+<li><p><strong>align</strong> – Alignment of the text inside the box </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8extGTest14myEXPECT_STREQEDaDaNSt6stringENSt6stringENSt6stringE10align_type">
+<span id="_CPPv3N8extGTest14myEXPECT_STREQEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="_CPPv2N8extGTest14myEXPECT_STREQEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="extGTest::myEXPECT_STREQ__auto.auto.ss.ss.ss.align_type"></span><span class="target" id="de/d73/namespaceext_g_test_1aab24ade5bdff133c8e19e0f1825dfa11"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">myEXPECT_STREQ</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">test</span></span>, <span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">expectation</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">box_text</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">message</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">color</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N8extGTest6COLORSE" title="extGTest::COLORS"><span class="n"><span class="pre">COLORS</span></span></a><span class="p"><span class="pre">.</span></span><span class="n"><span class="pre">DEFAULT</span></span>, <a class="reference internal" href="#_CPPv4N8extGTest10align_typeE" title="extGTest::align_type"><span class="n"><span class="pre">align_type</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">align</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">LEFT</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8extGTest14myEXPECT_STREQEDaDaNSt6stringENSt6stringENSt6stringE10align_type" title="Link to this definition"></a><br /></dt>
+<dd><p>Wrapper for GoogleTest macro EXPECT_STREQ that prints additional information in the same format as the test summary. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test</strong> – Test result </p></li>
+<li><p><strong>expectation</strong> – Expected result </p></li>
+<li><p><strong>box_text</strong> – Text inside the left box </p></li>
+<li><p><strong>message</strong> – Text after the box </p></li>
+<li><p><strong>color</strong> – Color of the message text </p></li>
+<li><p><strong>align</strong> – Alignment of the text inside the box </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8extGTest14myEXPECT_STRNEEDaDaNSt6stringENSt6stringENSt6stringE10align_type">
+<span id="_CPPv3N8extGTest14myEXPECT_STRNEEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="_CPPv2N8extGTest14myEXPECT_STRNEEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="extGTest::myEXPECT_STRNE__auto.auto.ss.ss.ss.align_type"></span><span class="target" id="de/d73/namespaceext_g_test_1ade6c69bd3ae20ffc202eeea222568851"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">myEXPECT_STRNE</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">test</span></span>, <span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">expectation</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">box_text</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">message</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">color</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N8extGTest6COLORSE" title="extGTest::COLORS"><span class="n"><span class="pre">COLORS</span></span></a><span class="p"><span class="pre">.</span></span><span class="n"><span class="pre">DEFAULT</span></span>, <a class="reference internal" href="#_CPPv4N8extGTest10align_typeE" title="extGTest::align_type"><span class="n"><span class="pre">align_type</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">align</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">LEFT</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8extGTest14myEXPECT_STRNEEDaDaNSt6stringENSt6stringENSt6stringE10align_type" title="Link to this definition"></a><br /></dt>
+<dd><p>Wrapper for GoogleTest macro EXPECT_STRNE that prints additional information in the same format as the test summary. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test</strong> – Test result </p></li>
+<li><p><strong>expectation</strong> – Expected result </p></li>
+<li><p><strong>box_text</strong> – Text inside the left box </p></li>
+<li><p><strong>message</strong> – Text after the box </p></li>
+<li><p><strong>color</strong> – Color of the message text </p></li>
+<li><p><strong>align</strong> – Alignment of the text inside the box </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8extGTest18myEXPECT_STRCASEEQEDaDaNSt6stringENSt6stringENSt6stringE10align_type">
+<span id="_CPPv3N8extGTest18myEXPECT_STRCASEEQEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="_CPPv2N8extGTest18myEXPECT_STRCASEEQEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="extGTest::myEXPECT_STRCASEEQ__auto.auto.ss.ss.ss.align_type"></span><span class="target" id="de/d73/namespaceext_g_test_1a5aff3ba735e9809d65289801fd353476"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">myEXPECT_STRCASEEQ</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">test</span></span>, <span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">expectation</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">box_text</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">message</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">color</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N8extGTest6COLORSE" title="extGTest::COLORS"><span class="n"><span class="pre">COLORS</span></span></a><span class="p"><span class="pre">.</span></span><span class="n"><span class="pre">DEFAULT</span></span>, <a class="reference internal" href="#_CPPv4N8extGTest10align_typeE" title="extGTest::align_type"><span class="n"><span class="pre">align_type</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">align</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">LEFT</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8extGTest18myEXPECT_STRCASEEQEDaDaNSt6stringENSt6stringENSt6stringE10align_type" title="Link to this definition"></a><br /></dt>
+<dd><p>Wrapper for GoogleTest macro EXPECT_STRCASEEQ that prints additional information in the same format as the test summary. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test</strong> – Test result </p></li>
+<li><p><strong>expectation</strong> – Expected result </p></li>
+<li><p><strong>box_text</strong> – Text inside the left box </p></li>
+<li><p><strong>message</strong> – Text after the box </p></li>
+<li><p><strong>color</strong> – Color of the message text </p></li>
+<li><p><strong>align</strong> – Alignment of the text inside the box </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8extGTest18myEXPECT_STRCASENEEDaDaNSt6stringENSt6stringENSt6stringE10align_type">
+<span id="_CPPv3N8extGTest18myEXPECT_STRCASENEEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="_CPPv2N8extGTest18myEXPECT_STRCASENEEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="extGTest::myEXPECT_STRCASENE__auto.auto.ss.ss.ss.align_type"></span><span class="target" id="de/d73/namespaceext_g_test_1a95cf7a553b77fab62750ede491b2f05b"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">myEXPECT_STRCASENE</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">test</span></span>, <span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">expectation</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">box_text</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">message</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">color</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N8extGTest6COLORSE" title="extGTest::COLORS"><span class="n"><span class="pre">COLORS</span></span></a><span class="p"><span class="pre">.</span></span><span class="n"><span class="pre">DEFAULT</span></span>, <a class="reference internal" href="#_CPPv4N8extGTest10align_typeE" title="extGTest::align_type"><span class="n"><span class="pre">align_type</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">align</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">LEFT</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8extGTest18myEXPECT_STRCASENEEDaDaNSt6stringENSt6stringENSt6stringE10align_type" title="Link to this definition"></a><br /></dt>
+<dd><p>Wrapper for GoogleTest macro EXPECT_STRCASENE that prints additional information in the same format as the test summary. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test</strong> – Test result </p></li>
+<li><p><strong>expectation</strong> – Expected result </p></li>
+<li><p><strong>box_text</strong> – Text inside the left box </p></li>
+<li><p><strong>message</strong> – Text after the box </p></li>
+<li><p><strong>color</strong> – Color of the message text </p></li>
+<li><p><strong>align</strong> – Alignment of the text inside the box </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8extGTest17myEXPECT_FLOAT_EQEDaDaNSt6stringENSt6stringENSt6stringE10align_type">
+<span id="_CPPv3N8extGTest17myEXPECT_FLOAT_EQEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="_CPPv2N8extGTest17myEXPECT_FLOAT_EQEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="extGTest::myEXPECT_FLOAT_EQ__auto.auto.ss.ss.ss.align_type"></span><span class="target" id="de/d73/namespaceext_g_test_1adc5e535ad3d3a793ae7effeb87c252dd"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">myEXPECT_FLOAT_EQ</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">test</span></span>, <span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">expectation</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">box_text</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">message</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">color</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N8extGTest6COLORSE" title="extGTest::COLORS"><span class="n"><span class="pre">COLORS</span></span></a><span class="p"><span class="pre">.</span></span><span class="n"><span class="pre">DEFAULT</span></span>, <a class="reference internal" href="#_CPPv4N8extGTest10align_typeE" title="extGTest::align_type"><span class="n"><span class="pre">align_type</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">align</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">LEFT</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8extGTest17myEXPECT_FLOAT_EQEDaDaNSt6stringENSt6stringENSt6stringE10align_type" title="Link to this definition"></a><br /></dt>
+<dd><p>Wrapper for GoogleTest macro EXPECT_FLOAT_EQ that prints additional information in the same format as the test summary. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test</strong> – Test result </p></li>
+<li><p><strong>expectation</strong> – Expected result </p></li>
+<li><p><strong>box_text</strong> – Text inside the left box </p></li>
+<li><p><strong>message</strong> – Text after the box </p></li>
+<li><p><strong>color</strong> – Color of the message text </p></li>
+<li><p><strong>align</strong> – Alignment of the text inside the box </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8extGTest18myEXPECT_DOUBLE_EQEDaDaNSt6stringENSt6stringENSt6stringE10align_type">
+<span id="_CPPv3N8extGTest18myEXPECT_DOUBLE_EQEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="_CPPv2N8extGTest18myEXPECT_DOUBLE_EQEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="extGTest::myEXPECT_DOUBLE_EQ__auto.auto.ss.ss.ss.align_type"></span><span class="target" id="de/d73/namespaceext_g_test_1a6013b0b63939d8df810bd5f29fcb2650"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">myEXPECT_DOUBLE_EQ</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">test</span></span>, <span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">expectation</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">box_text</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">message</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">color</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N8extGTest6COLORSE" title="extGTest::COLORS"><span class="n"><span class="pre">COLORS</span></span></a><span class="p"><span class="pre">.</span></span><span class="n"><span class="pre">DEFAULT</span></span>, <a class="reference internal" href="#_CPPv4N8extGTest10align_typeE" title="extGTest::align_type"><span class="n"><span class="pre">align_type</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">align</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">LEFT</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8extGTest18myEXPECT_DOUBLE_EQEDaDaNSt6stringENSt6stringENSt6stringE10align_type" title="Link to this definition"></a><br /></dt>
+<dd><p>Wrapper for GoogleTest macro EXPECT_DOUBLE_EQ that prints additional information in the same format as the test summary. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test</strong> – Test result </p></li>
+<li><p><strong>expectation</strong> – Expected result </p></li>
+<li><p><strong>box_text</strong> – Text inside the left box </p></li>
+<li><p><strong>message</strong> – Text after the box </p></li>
+<li><p><strong>color</strong> – Color of the message text </p></li>
+<li><p><strong>align</strong> – Alignment of the text inside the box </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8extGTest13myEXPECT_NEAREDaDaNSt6stringENSt6stringENSt6stringE10align_type">
+<span id="_CPPv3N8extGTest13myEXPECT_NEAREDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="_CPPv2N8extGTest13myEXPECT_NEAREDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="extGTest::myEXPECT_NEAR__auto.auto.ss.ss.ss.align_type"></span><span class="target" id="de/d73/namespaceext_g_test_1a7ae1906ef9aa6a41e49d3b0e4ba65c0c"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">myEXPECT_NEAR</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">test</span></span>, <span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">expectation</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">box_text</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">message</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">color</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N8extGTest6COLORSE" title="extGTest::COLORS"><span class="n"><span class="pre">COLORS</span></span></a><span class="p"><span class="pre">.</span></span><span class="n"><span class="pre">DEFAULT</span></span>, <a class="reference internal" href="#_CPPv4N8extGTest10align_typeE" title="extGTest::align_type"><span class="n"><span class="pre">align_type</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">align</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">LEFT</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8extGTest13myEXPECT_NEAREDaDaNSt6stringENSt6stringENSt6stringE10align_type" title="Link to this definition"></a><br /></dt>
+<dd><p>Wrapper for GoogleTest macro EXPECT_NEAR that prints additional information in the same format as the test summary. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test</strong> – Test result </p></li>
+<li><p><strong>expectation</strong> – Expected result </p></li>
+<li><p><strong>box_text</strong> – Text inside the left box </p></li>
+<li><p><strong>message</strong> – Text after the box </p></li>
+<li><p><strong>color</strong> – Color of the message text </p></li>
+<li><p><strong>align</strong> – Alignment of the text inside the box </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8extGTest14myEXPECT_THROWEDaDaNSt6stringENSt6stringENSt6stringE10align_type">
+<span id="_CPPv3N8extGTest14myEXPECT_THROWEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="_CPPv2N8extGTest14myEXPECT_THROWEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="extGTest::myEXPECT_THROW__auto.auto.ss.ss.ss.align_type"></span><span class="target" id="de/d73/namespaceext_g_test_1a542732d1521605833eaeabcd3b465f53"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">myEXPECT_THROW</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">test</span></span>, <span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">expectation</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">box_text</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">message</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">color</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N8extGTest6COLORSE" title="extGTest::COLORS"><span class="n"><span class="pre">COLORS</span></span></a><span class="p"><span class="pre">.</span></span><span class="n"><span class="pre">DEFAULT</span></span>, <a class="reference internal" href="#_CPPv4N8extGTest10align_typeE" title="extGTest::align_type"><span class="n"><span class="pre">align_type</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">align</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">LEFT</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8extGTest14myEXPECT_THROWEDaDaNSt6stringENSt6stringENSt6stringE10align_type" title="Link to this definition"></a><br /></dt>
+<dd><p>Wrapper for GoogleTest macro EXPECT_THROW that prints additional information in the same format as the test summary. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test</strong> – Test result </p></li>
+<li><p><strong>expectation</strong> – Expected result </p></li>
+<li><p><strong>box_text</strong> – Text inside the left box </p></li>
+<li><p><strong>message</strong> – Text after the box </p></li>
+<li><p><strong>color</strong> – Color of the message text </p></li>
+<li><p><strong>align</strong> – Alignment of the text inside the box </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8extGTest18myEXPECT_ANY_THROWEDaDaNSt6stringENSt6stringENSt6stringE10align_type">
+<span id="_CPPv3N8extGTest18myEXPECT_ANY_THROWEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="_CPPv2N8extGTest18myEXPECT_ANY_THROWEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="extGTest::myEXPECT_ANY_THROW__auto.auto.ss.ss.ss.align_type"></span><span class="target" id="de/d73/namespaceext_g_test_1a0ddfdc4252ada0a58bd7fbb1c262ac88"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">myEXPECT_ANY_THROW</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">test</span></span>, <span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">expectation</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">box_text</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">message</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">color</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N8extGTest6COLORSE" title="extGTest::COLORS"><span class="n"><span class="pre">COLORS</span></span></a><span class="p"><span class="pre">.</span></span><span class="n"><span class="pre">DEFAULT</span></span>, <a class="reference internal" href="#_CPPv4N8extGTest10align_typeE" title="extGTest::align_type"><span class="n"><span class="pre">align_type</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">align</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">LEFT</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8extGTest18myEXPECT_ANY_THROWEDaDaNSt6stringENSt6stringENSt6stringE10align_type" title="Link to this definition"></a><br /></dt>
+<dd><p>Wrapper for GoogleTest macro EXPECT_ANY_THROW that prints additional information in the same format as the test summary. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test</strong> – Test result </p></li>
+<li><p><strong>expectation</strong> – Expected result </p></li>
+<li><p><strong>box_text</strong> – Text inside the left box </p></li>
+<li><p><strong>message</strong> – Text after the box </p></li>
+<li><p><strong>color</strong> – Color of the message text </p></li>
+<li><p><strong>align</strong> – Alignment of the text inside the box </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8extGTest17myEXPECT_NO_THROWEDaDaNSt6stringENSt6stringENSt6stringE10align_type">
+<span id="_CPPv3N8extGTest17myEXPECT_NO_THROWEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="_CPPv2N8extGTest17myEXPECT_NO_THROWEDaDaNSt6stringENSt6stringENSt6stringE10align_type"></span><span id="extGTest::myEXPECT_NO_THROW__auto.auto.ss.ss.ss.align_type"></span><span class="target" id="de/d73/namespaceext_g_test_1a3fcee4876fb5801d93c06ab4d7ae6cca"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">myEXPECT_NO_THROW</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">test</span></span>, <span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">expectation</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">box_text</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">message</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">color</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N8extGTest6COLORSE" title="extGTest::COLORS"><span class="n"><span class="pre">COLORS</span></span></a><span class="p"><span class="pre">.</span></span><span class="n"><span class="pre">DEFAULT</span></span>, <a class="reference internal" href="#_CPPv4N8extGTest10align_typeE" title="extGTest::align_type"><span class="n"><span class="pre">align_type</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">align</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">LEFT</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8extGTest17myEXPECT_NO_THROWEDaDaNSt6stringENSt6stringENSt6stringE10align_type" title="Link to this definition"></a><br /></dt>
+<dd><p>Wrapper for GoogleTest macro EXPECT_NO_THROW that prints additional information in the same format as the test summary. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test</strong> – Test result </p></li>
+<li><p><strong>expectation</strong> – Expected result </p></li>
+<li><p><strong>box_text</strong> – Text inside the left box </p></li>
+<li><p><strong>message</strong> – Text after the box </p></li>
+<li><p><strong>color</strong> – Color of the message text </p></li>
+<li><p><strong>align</strong> – Alignment of the text inside the box </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-variables">Variables</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8extGTest6COLORSE">
+<span id="_CPPv3N8extGTest6COLORSE"></span><span id="_CPPv2N8extGTest6COLORSE"></span><span id="extGTest::COLORS__extGTest::ColorsC"></span><span class="target" id="de/d73/namespaceext_g_test_1a8774b58bc93abacc1323f59b23ef0c81"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv48extGTest" title="extGTest"><span class="n"><span class="pre">extGTest</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="#_CPPv4N8extGTest6ColorsE" title="extGTest::Colors"><span class="n"><span class="pre">Colors</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">COLORS</span></span></span><a class="headerlink" href="#_CPPv4N8extGTest6COLORSE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv4N8extGTest6ColorsE">
+<span id="_CPPv3N8extGTest6ColorsE"></span><span id="_CPPv2N8extGTest6ColorsE"></span><span id="extGTest::Colors"></span><span class="target" id="d7/d31/structext_g_test_1_1_colors"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Colors</span></span></span><a class="headerlink" href="#_CPPv4N8extGTest6ColorsE" title="Link to this definition"></a><br /></dt>
+<dd><div class="docutils container">
+<em>#include &lt;extendedGTest.h&gt;</em></div>
+<p>ANSI Color definitions. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-static-attributes">Public Static Attributes</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8extGTest6Colors7DEFAULTE">
+<span id="_CPPv3N8extGTest6Colors7DEFAULTE"></span><span id="_CPPv2N8extGTest6Colors7DEFAULTE"></span><span id="extGTest::Colors::DEFAULT__ss"></span><span class="target" id="d7/d31/structext_g_test_1_1_colors_1aa3585efe97a29093c1f9648b20259dfc"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DEFAULT</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;\x1B[0;0m&quot;</span></span><a class="headerlink" href="#_CPPv4N8extGTest6Colors7DEFAULTE" title="Link to this definition"></a><br /></dt>
+<dd><p>ANSI color code for default. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8extGTest6Colors5BLACKE">
+<span id="_CPPv3N8extGTest6Colors5BLACKE"></span><span id="_CPPv2N8extGTest6Colors5BLACKE"></span><span id="extGTest::Colors::BLACK__ss"></span><span class="target" id="d7/d31/structext_g_test_1_1_colors_1a018b4dcdf60c28f765fd6e026de2b458"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">BLACK</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;\x1B[0;30m&quot;</span></span><a class="headerlink" href="#_CPPv4N8extGTest6Colors5BLACKE" title="Link to this definition"></a><br /></dt>
+<dd><p>ANSI color code for black. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8extGTest6Colors3REDE">
+<span id="_CPPv3N8extGTest6Colors3REDE"></span><span id="_CPPv2N8extGTest6Colors3REDE"></span><span id="extGTest::Colors::RED__ss"></span><span class="target" id="d7/d31/structext_g_test_1_1_colors_1a0cd90bec4ba3acda540d23d8ee90752e"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">RED</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;\x1B[0;31m&quot;</span></span><a class="headerlink" href="#_CPPv4N8extGTest6Colors3REDE" title="Link to this definition"></a><br /></dt>
+<dd><p>ANSI color code for red. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8extGTest6Colors5GREENE">
+<span id="_CPPv3N8extGTest6Colors5GREENE"></span><span id="_CPPv2N8extGTest6Colors5GREENE"></span><span id="extGTest::Colors::GREEN__ss"></span><span class="target" id="d7/d31/structext_g_test_1_1_colors_1a79c8cc98aa9559ff37705de5bc2eb437"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GREEN</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;\x1B[0;32m&quot;</span></span><a class="headerlink" href="#_CPPv4N8extGTest6Colors5GREENE" title="Link to this definition"></a><br /></dt>
+<dd><p>ANSI color code for green. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8extGTest6Colors6YELLOWE">
+<span id="_CPPv3N8extGTest6Colors6YELLOWE"></span><span id="_CPPv2N8extGTest6Colors6YELLOWE"></span><span id="extGTest::Colors::YELLOW__ss"></span><span class="target" id="d7/d31/structext_g_test_1_1_colors_1a2404c804e38f3758397dee0699993263"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">YELLOW</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;\x1B[0;33m&quot;</span></span><a class="headerlink" href="#_CPPv4N8extGTest6Colors6YELLOWE" title="Link to this definition"></a><br /></dt>
+<dd><p>ANSI color code for yellow. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8extGTest6Colors4BLUEE">
+<span id="_CPPv3N8extGTest6Colors4BLUEE"></span><span id="_CPPv2N8extGTest6Colors4BLUEE"></span><span id="extGTest::Colors::BLUE__ss"></span><span class="target" id="d7/d31/structext_g_test_1_1_colors_1a6c8f28ed3382663da1ee164d8b205153"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">BLUE</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;\x1B[0;34m&quot;</span></span><a class="headerlink" href="#_CPPv4N8extGTest6Colors4BLUEE" title="Link to this definition"></a><br /></dt>
+<dd><p>ANSI color code for blue. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8extGTest6Colors7MAGENTAE">
+<span id="_CPPv3N8extGTest6Colors7MAGENTAE"></span><span id="_CPPv2N8extGTest6Colors7MAGENTAE"></span><span id="extGTest::Colors::MAGENTA__ss"></span><span class="target" id="d7/d31/structext_g_test_1_1_colors_1a5cac4f684baec582ef18da8465c6555f"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">MAGENTA</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;\x1B[0;35m&quot;</span></span><a class="headerlink" href="#_CPPv4N8extGTest6Colors7MAGENTAE" title="Link to this definition"></a><br /></dt>
+<dd><p>ANSI color code for magenta. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8extGTest6Colors4CYANE">
+<span id="_CPPv3N8extGTest6Colors4CYANE"></span><span id="_CPPv2N8extGTest6Colors4CYANE"></span><span id="extGTest::Colors::CYAN__ss"></span><span class="target" id="d7/d31/structext_g_test_1_1_colors_1a738f1521cd75834c935aa06c34e1bd24"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">CYAN</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;\x1B[0;36m&quot;</span></span><a class="headerlink" href="#_CPPv4N8extGTest6Colors4CYANE" title="Link to this definition"></a><br /></dt>
+<dd><p>ANSI color code for cyan. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8extGTest6Colors5WHITEE">
+<span id="_CPPv3N8extGTest6Colors5WHITEE"></span><span id="_CPPv2N8extGTest6Colors5WHITEE"></span><span id="extGTest::Colors::WHITE__ss"></span><span class="target" id="d7/d31/structext_g_test_1_1_colors_1a337d68ec6497ddbe8427e9728588970c"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">WHITE</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;\x1B[0;37m&quot;</span></span><a class="headerlink" href="#_CPPv4N8extGTest6Colors5WHITEE" title="Link to this definition"></a><br /></dt>
+<dd><p>ANSI color code for white. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Luis Pedro Vicente Matilla.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
